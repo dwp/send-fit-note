@@ -1,0 +1,85 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Upload your fit note paper - Send your fit note - GOV.UK
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-nav.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="dev-three-options">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">Upload your fit note</h1>
+
+    <div class="govuk-!-padding-bottom-2"></div>
+
+    <ol class="govuk-list govuk-list--number">
+      <div class="govuk-!-padding-bottom-5"></div>
+      <li>You can use a smartphone, tablet or camera. Or you can use a scanner connected to a computer.</li>
+      <div class="govuk-!-padding-bottom-3"></div>
+        
+          <li>Make sure your fit note is landscape (horizontal) not portrait (vertical).</li>
+
+      <div class="govuk-!-padding-bottom-3"></div>
+      <li>The whole fit note must be shown. It needs to be on 1 A4 page.</li>
+    
+      <style>
+        .fit-note-zoom {max-width: 100%}
+        .fit-note-zoom {max-height: auto}
+        </style>
+  <img src="/public/images/fit-note-zoom.png" class="fit-note-zoom" alt="An incorrect photograph of a zoomed in fit note and a correct clear photograph of a fit note">
+
+    <li>Check that the image is in focus and all the text can be read.</li>
+  </ol>
+    <div class="govuk-!-padding-bottom-5"></div>
+  
+    <div class="govuk-inset-text">
+    
+ 
+      <ul class="govuk-list govuk-list--bullet">
+        <li>the selected file must be a JPG, BMP, PNG, TIF or PDF</li>
+        <li>the selected file must be smaller than 10MB</li>
+        <li>ensure all 4 corners of the fit note are within the image</li></ul>
+      </div>
+
+    
+
+    <h2 class="govuk-heading-l">Choose a file to upload</h2>
+    <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+    <div class="govuk-!-padding-bottom-6"></div>
+    <form class="form" action="/dev-scanning-photo-paper" method="post">
+      <button class="govuk-button" data-module="govuk-button">Upload file</button></form>
+
+  </div>
+
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-inset-text">
+      <h5 class="govuk-heading-m">Talk to an advisor</h5>
+      <ul class="govuk-list">
+        <li>Telephone: 0800 169 0310</li>
+        <li>Textphone: 0800 169 0314</li>
+        <li>Monday to Friday, 8am to 6pm (except public holidays)</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+    {% endblock %}

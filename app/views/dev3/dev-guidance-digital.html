@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Choose a file to upload - Send your fit note - GOV.UK
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-nav.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="dev-two-options">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">Before you upload your digital fit note</h1>
+
+    <p>Make sure your fit note is:</p>
+
+    <ol class="govuk-list govuk-list--bullet">
+      <li>clear and easy to read</li>
+      <li>landscape (horizontal) not portrait (vertical)</li>
+      <li>all on one page with your contact details visible</li></ol>
+      <p>If your fit note has a data matrix (a black and white square that looks like a QR code) at the bottom, it should be clear.</p>
+
+      <p>It's important that the photo of your fit note is clear and easy to read by our system. If it cannot be read, it could be rejected.</p>
+
+      <style>
+        .fit-note-zoom {max-width: 100%}
+        .fit-note-zoom {max-height: auto}
+        </style>
+       <img src="/public/images/fit-note-zoom2.png" class="fit-note-zoom">  
+
+       <h2 class="govuk-heading-m">File size</h2>
+       <p>The file size must not be larger than 15MB. If it's larger than 15MB, you will need to follow the instructions on your device to make a smaller version.</p>
+       <p>To check the file size (these steps may vary for different types of devices):</p>
+       <ol class="govuk-list govuk-list--number">
+        <li>Find the file on your device and select it.</li>
+        <li>Select the option for more information or more details.</li>
+        <li>Look for the file size - it should not be larger than 15MB or 15000kB.</li>
+      </ol>
+
+      <h2 class="govuk-heading-m">File format</h2>
+      <p>Your fit note must be in one of these formats:</p>
+      <ol class="govuk-list govuk-list--bullet">
+        <li>JPG</li>
+        <li>JPEG</li>
+        <li>HEIC</li>
+        <li>HEIF</li>
+        <li>BMP</li>
+        <li>PNG</li>
+        <li>TIFF</li>
+        <li>PDF</li></ol>
+
+        <p>To check the format, look at the last three letters of the file name.</p>
+
+        <p>For example:</p>
+        <ol class="govuk-list govuk-list--bullet">
+          <li>.pdf is a PDF file</li>
+          <li>.jpg is a JPG file</li></ol>
+
+    <div class="govuk-!-padding-bottom-2"></div>
+
+    <form class="form" action="/dev3/dev-upload" method="post">
+      <button class="govuk-button" data-module="govuk-button">Continue to upload</button></form>
+
+  </div>
+
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-inset-text">
+      <h2 class="govuk-heading-m">Talk to an advisor</h2>
+      <ul class="govuk-list">
+        <li>Telephone: 0800 169 0310</li>
+        <li>Textphone: 0800 169 0314</li>
+        <li>Monday to Friday, 8am to 5pm (except public holidays)</li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+    {% endblock %}

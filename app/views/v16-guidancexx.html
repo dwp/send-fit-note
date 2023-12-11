@@ -1,0 +1,88 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Only a fit note can be uploaded and processed by this service - Send your fit note - GOV.UK
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-nav.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="v15-do-you-have-a-fit-note">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">We can only accept a Statement of Fitness for work.</h1>
+
+    <p class="govuk-body">
+      If you have tried to upload your fit note multiple times, it could be in the wrong format, have missing information or unable to be processed by our system.</p>
+
+    <p>If it is a digital fit note, you can print it, take a photo of it and upload the photo.</p>
+    <p>Alternatively, you can send us your fit note instead.</p>
+ 
+
+
+      <!DOCTYPE html>
+      <style>
+
+            .not-accepted {max-width: 100%}
+            .not-accepted {max-height: auto}
+    </style>
+      <img src="/public/images/not-accepted.png" class="not-accepted" alt="Examples of a medical letter, isolation note and a MED 10 form">
+      </html>
+
+    <div class="govuk-!-padding-bottom-3"></div>
+
+    <h1 class="govuk-heading-m">Where to send your medical evidence</h1>
+
+    <div class="govuk-inset-text">
+    <ul class="govuk-list">
+      <li>Freepost DWP</li>
+      <li>ESA 26</li>
+    </ul>
+    </div>
+
+    <p class="govuk-body">You do not need a postage stamp. </p>
+    <p class="govuk-body">Make sure you keep a copy of any medical evidence for your own record.</p>
+
+    <p><a href="/v13a-start">Go back to Send your fit note</a></p>
+
+  </div>
+
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-inset-text">
+      <h2 class="govuk-heading-m">Get help</h2>
+      <ul class="govuk-list">
+        <li><a href="v16-guidance.html" class="govuk-link" rel="noreferrer noopener" target="_blank">Guidance for Fit Note (opens in new tab)</a></li>
+          <div class="govuk-!-padding-bottom-2"></div>
+          <li><b>Telephone</b></li>
+          <li>0800 169 0310</li>
+          <div class="govuk-!-padding-bottom-2"></div>
+          <li><b>Textphone</b></li>
+          <li>0800 169 0314</li>
+        
+          <div class="govuk-!-padding-bottom-2"></div>
+          <li>Monday to Friday, 8am to 6pm (except public holidays)</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+    {% endblock %}
+</div>

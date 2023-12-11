@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Sut fath o nodyn ffitrwydd sydd gennych? – Anfon eich nodyn ffitrwydd -  GOV.UK
+
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="welsh-dev-do-you-have-a-fit-note">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form class="form" action="/welsh-dev-two-options" method="POST">
+
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Sut fath o nodyn ffitrwydd sydd gennych?
+              </h1>
+            </legend>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="welsh-dev-obtained-fit-note-2" name="welsh-dev-obtained-fit-note" type="radio" value="digital">
+              <label class="govuk-label govuk-radios__label" for="welsh-dev-obtained-fit-note-2">
+                Fersiwn digidol (anfonwyd trwy neges destun neu e-bost)
+
+              </label>
+            </div>
+            <div class="govuk-radios">
+              <div class="govuk-radios__item">
+                <input class="govuk-radios__input" id="welsh-dev-obtained-fit-note" name="welsh-dev-obtained-fit-note" type="radio" value="paper">
+                <label class="govuk-label govuk-radios__label" for="welsh-dev-obtained-fit-note">
+                  Fersiwn papur (copi caled)
+                </label>
+              </div>
+              
+  
+          </fieldset>
+        </div>
+  
+        <div class="govuk-!-padding-bottom-1"></div>
+  
+        <button class="govuk-button" data-module="govuk-button">Parhau</button>
+  
+      </form>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <div class="govuk-inset-text">
+        <h2 class="govuk-heading-m">Siarad ag ymgynghorydd</h2>
+        <ul class="govuk-list">
+          <li>Ffôn: 0800 169 0310</li>
+          <li>Ffôn testun: 0800 169 0314</li>
+          <li>Dydd Llun i ddydd Gwener, 8am i 6pm (ag eithrio gwyliau cyhoeddus)</li>
+        </ul>
+      </div>
+
+  </div>
+
+{% endblock %}
