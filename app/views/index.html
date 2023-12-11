@@ -1,11 +1,6 @@
 
 {% extends "layout.html" %}
 
-{% set govukRebrand = true %}
-
-
-
-
 {% block pageTitle %}
   GOV.UK Prototype Kit
 {% endblock %}
@@ -13,22 +8,27 @@
 {% block content %}
 
   <div class="govuk-grid-row">
-
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
         Fit Note Prototype Versions</h1>
 
-        <p> For any questions, please contact: <a href="mailto:rebecca.williams5@@engineering.digital.dwp.gov.uk">Rebecca Williams</a>.
+        <h2 class="govuk-heading-m">Please find the Fit Note prototype versions currently under test and refinement</h2>
 
-          <p class='govuk-body'> You can access the <a href="https://www.gov.uk/send-fit-note" class="govuk-link" rel="noreferrer noopener" target="_blank">live service of SYFN here (opens in new tab)</a>.</p>
+      <p> The Baseline Prototypes are developed leveraging the questions from <b><a href="https://www.gov.uk/send-fit-note">Send your fit note for your ESA claim</a></b> from the current live Beta.</p>
 
 
-     
+      <p> For any questions, please contact: <a href="mailto:kulan.gunawardena@@engineering.digital.dwp.gov.uk">Kulan Gunawardena</a>.
       </p>
-      <br>
-      <br>
-      
-      
+
+        <!DOCTYPE html>
+        <style>
+                              .falcon {max-width: 15%}
+                              .falcon {max-height: auto}
+        </style>
+        <center>
+            <img src="/public/images/falcon.png" class="falcon" alt="team falcon logo">
+        </center>
+        </html>
 
       <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
         <div class="govuk-accordion__section ">
@@ -40,88 +40,35 @@
             </h2>
           </div>
           <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-
-
-          
-
-
-            <h3 class="govuk-heading-m">
-              Sprint prototype</h3>
-
-
+            <p class='govuk-body'>This section is for the Development Team. Please note that various elements of the Prototype will be <b>subject to change</b> as per User Testing. The Design Team will coordinate changes with the BA Team.</p>
 
             <div class="govuk-inset-text">
+                <b>Sprint Prototype</b> is designed for the Development Team. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.
                 <p>Tickets included for design changes in sprint 29: <a href="https://dwpdigital.atlassian.net/browse/HTF-1085">HTF-1085 - 3 to 2 radio buttons </a>
                   <p><a href="https://dwpdigital.atlassian.net/browse/HTF-1086">HTF-1086 - Split upload and guidance pages (paper) </a></p><a href="https://dwpdigital.atlassian.net/browse/HTF-1087">HTF-1087 - Split upload and guidance pages (digital) </a></p>
             </div>
 
             <form class="form" action="/dev3/dev-start" method="post">
               <button class="govuk-button" data-module="govuk-button">Sprint Prototype</button></form>
-<br>
-<br>
-              <h3 class="govuk-heading-m">
-                Release 1 prototype</h3>
 
-              
-                <p class='govuk-body'>This prototype version was created in 2023 and contains both an English and Welsh version.</p>
+              <form class="form" action="/dev4/dev-start" method="post">
+                <button class="govuk-button" data-module="govuk-button">Release 1 - 2023</button></form>
 
+              <div class="govuk-inset-text">
+                  <!DOCTYPE html>
+                  <style>
 
-              <form class="form" action="/release1/dev-start" method="post">
-                <button class="govuk-button" data-module="govuk-button">Release 1 - English</button></form>
+            .welsh-flag {max-width: 20%}
+            .welsh-flag {max-height: auto}
+    </style>
+                  <img src="/public/images/welsh-flag.png" class="welsh-flag" alt="welsh-flag">
+                  </html>
+                  <div class="govuk-!-padding-bottom-3"></div>
+                  <b>Welsh Prototype</b> is designed for the Development Team. It is identical to the the above Catalogue Prototype, but in the <b>Welsh language</b>. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.
+              </div>
 
-                <form class="form" action="/release1-welsh/dev-start" method="post">
-                  <button class="govuk-button" data-module="govuk-button">Release 1 - Welsh</button></form>
-
-
-                  <br>
-<br>
-              <h3 class="govuk-heading-m">
-                Release 2 prototype</h3>
-                <strong class="govuk-tag">
-                  Current live service design
-                </strong>
-<br>
-<br>
-
-                <p class='govuk-body'>This prototype version was created in March 2024 and contains both an English and Welsh version.</p>
-
-                <p class="govuk-body">The release 2 prototype includes the following changes:</p>
-<ul class="govuk-list govuk-list--bullet">
-  <li><b>Digital guidance page </b>- content updates and different image</li>
-  <li><b>Paper guidance page </b>- content updates and different image</li>
-  <li><b>Paper guidance page </b>- link to a new 'Send by post' page</li>
-  <li><b>Send by post page </b>- new page created</li>
-</ul>
-<br>
-                <form class="form" action="/release2/dev-start" method="post">
-                  <button class="govuk-button" data-module="govuk-button">Release 2 - English</button></form>
-  
-                  <form class="form" action="/release2-welsh/dev-start" method="post">
-                    <button class="govuk-button" data-module="govuk-button">Release 2 - Welsh</button></form>
-
-
-
-
-                    <br>
-                    <br>
-                                  <h3 class="govuk-heading-m">
-                                    Release 3 prototype</h3>
-                    
-                                    <p class='govuk-body'>This prototype version was created in May 2024 and contains both an English and Welsh version.</p>
-
-                                    <p class="govuk-body">The release 3 prototype includes the following changes:</p>
-                    <ul class="govuk-list govuk-list--bullet">
-                      <li><b>Fitnote upload page </b>- choose file and upload button reordered </li>
-                      </ul>
-                      <br>
-                      <br>
-                    
-                                    <form class="form" action="/release3/dev-start" method="post">
-                                      <button class="govuk-button" data-module="govuk-button">Release 3 - English</button></form>
-                      
-                                      <form class="form" action="" method="post">
-                                        <button class="govuk-button" data-module="govuk-button">Release 3 - Welsh</button></form>
-
+              <form class="form" action="welsh-dev-start" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Welsh Prototype</button></form>
 
           </div>
         </div>
@@ -134,603 +81,692 @@
         </span>
                   </h2>
               </div>
-            
+              <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
+                  <p class='govuk-body'>This section is for the Development Team. Please note that various elements of the Prototype will be <b>subject to change</b> as per User Testing. The Design Team will coordinate changes with the BA Team.</p>
 
-              <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+                  <div class="govuk-inset-text">
+                      <b>The error messages</b> are designed for the Development Team. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.
+                  </div>
 
-
-              <details class="govuk-details">
-                <summary class="govuk-details__summary">
-                  <span class="govuk-details__summary-text">
-                    Release 1 prototype errors
-                  </span>
-                </summary>
-             
-
-<br>
-<br>
-                <h2 class="govuk-heading-s">
-                  1. Server Errors</h2>
-
-              <details class="govuk-details" data-module="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                    Server error prototypes
-                    </span>
-                  </summary>
-                  <div class="govuk-!-padding-bottom-6"></div>
-                  <form class="form" action="dev-404-error" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>1a. 404 Server Error</b></button></form>
-
-                  <form class="form" action="dev-500-error" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>1b. 500 Server Error</b></button></form>
-
-                  <form class="form" action="dev-503-error" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>1c. 503 Server Error</b></button></form>
-              </details>
-
-              <h2 class="govuk-heading-s">
-                  2. Do you have a fit note radio error</h2>
-
-              <details class="govuk-details" data-module="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                    Fit note radio error
-                    </span>
-                  </summary>
-                  <div class="govuk-!-padding-bottom-6"></div>
-                  <form class="form" action="dev-error-do-you-have-a-fit-note" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>2. Unselected Radio Button Error</b></button></form>
-
-              </details>
-
-              <h2 class="govuk-heading-s">
-                  3. How did you obtain your fit note error</h2>
-
-              <details class="govuk-details" data-module="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                    Fit note journey selection radio error
-                    </span>
-                  </summary>
-                  <div class="govuk-!-padding-bottom-6"></div>
-                  <form class="form" action="dev-error-three-options" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>3. Unselected Radio Button Error</b></button></form>
-
-              </details>
-
-              <h2 class="govuk-heading-s">
-                  4. The selected file must be smaller than 10MB</h2>
-
-              <details class="govuk-details" data-module="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                    File size error prototypes
-                    </span>
-                  </summary>
-                  <div class="govuk-!-padding-bottom-6"></div>
-                  <form class="form" action="dev-error-10mb-paper" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>4a. Paper: File Size Error</b></button></form>
-
-                  <form class="form" action="dev-error-10mb-sms" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>4b. SMS: File Size Error</b></button></form>
-
-                  <form class="form" action="dev-error-10mb-email" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>4c. Email: File Size Error</b></button></form>
-              </details>
-
-              <h2 class="govuk-heading-s">
-                  5. The selected file must be a JPG, JPEG, BMP, PNG, TIF or PDF</h2>
-
-              <details class="govuk-details" data-module="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                    File-type error prototypes
-                    </span>
-                  </summary>
-                  <div class="govuk-!-padding-bottom-6"></div>
-                  <form class="form" action="dev-error-file-type-paper" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>5a. Paper: File-Type Error</b></button></form>
-
-                  <form class="form" action="dev-error-file-type-sms" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>5b. SMS: File-Type Error</b></button></form>
-
-                  <form class="form" action="dev-error-file-type-email" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>5c. Email: File-Type Error</b></button></form>
-
-              </details>
-
-              <h2 class="govuk-heading-s">
-                  6. Selected file must be clear and readable, containing the whole fit note</h2>
-
-              <details class="govuk-details" data-module="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                    Reading error prototypes
-                    </span>
-                  </summary>
-                  <div class="govuk-!-padding-bottom-6"></div>
-                  <form class="form" action="dev-error-clear-paper" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>6a. Paper: Reading Error</b></button></form>
-
-                  <form class="form" action="dev-error-clear-sms" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>6b. SMS: Reading Error</b></button></form>
-
-                  <form class="form" action="dev-error-clear-email" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>6c. Email: Reading Error</b></button></form>
-
-              </details>
-
-              <h2 class="govuk-heading-s">
-                  7. You must select a file to continue</h2>
-
-              <details class="govuk-details" data-module="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                    Unselected file error prototypes
-                    </span>
-                  </summary>
-                  <div class="govuk-!-padding-bottom-6"></div>
-                  <form class="form" action="dev-error-file-continue-paper" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>7a. Paper: Unselected File Error</b></button></form>
-
-                  <form class="form" action="dev-error-file-continue-sms" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>7b. SMS: Unselected File Error</b></button></form>
-
-                  <form class="form" action="dev-error-file-continue-email" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>7c. Email: Unselected File Error</b></button></form>
-
-              </details>
-
-              <h2 class="govuk-heading-s">
-                  8. Enter a National Insurance number in the correct format</h2>
-              <details class="govuk-details" data-module="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                    National Insurance number error prototype
-                    </span>
-                  </summary>
-                  <div class="govuk-!-padding-bottom-6"></div>
-                  <form class="form" action="dev-error-ni-number-format" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>8. NI Number Error</b></button></form>
-              </details>
-
-              <h2 class="govuk-heading-s">
-                  9. Address error prototypes</h2>
-              <details class="govuk-details" data-module="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                    Address error prototypes
-                    </span>
-                  </summary>
-                  <div class="govuk-!-padding-bottom-6"></div>
-                  <b>8a.</b> Enter your post code</p>
-                  <form class="form" action="dev-error-post-code" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>9a. Unentered Post Code Error</b></button></form>
                   <h2 class="govuk-heading-s">
-                      8b. Enter a real post code</h2>
-                  <form class="form" action="dev-error-real-post-code" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>9b. Real Post Code Error</b></button></form>
+                      1. Server Errors</h2>
+
+                  <details class="govuk-details" data-module="govuk-details">
+                      <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                        Server error prototypes
+                        </span>
+                      </summary>
+                      <div class="govuk-!-padding-bottom-6"></div>
+                      <form class="form" action="dev-404-error" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>1a. 404 Server Error</b></button></form>
+
+                      <form class="form" action="dev-500-error" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>1b. 500 Server Error</b></button></form>
+
+                      <form class="form" action="dev-503-error" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>1c. 503 Server Error</b></button></form>
+                  </details>
+
                   <h2 class="govuk-heading-s">
-                      8c. Enter your house name or number</h2>
-                  <form class="form" action="dev-error-house-name-or-number" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>9c. House Address Error</b></button></form>
-              </details>
+                      2. Do you have a fit note radio error</h2>
 
-              <h2 class="govuk-heading-s">
-                  10. Text message selection errors</h2>
-              <details class="govuk-details" data-module="govuk-details">
-                  <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                    Text message error prototypes
-                    </span>
-                  </summary>
-                  <div class="govuk-!-padding-bottom-6"></div>
-                  <p>
-                      <b>6a.</b> Select yes if you would like to receive a text message</p>
-                  <form class="form" action="dev-error-yes-text-message" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>10a. Text Message Unselected Error</b></button></form>
-                  <p><b>6b.</b> Enter a mobile number, like 07700 900 982 or +44 7700 900 982</p>
-                  <form class="form" action="dev-error-mobile-number-example" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>10b. Mobile Number Error</b></button></form>
-              </details>
+                  <details class="govuk-details" data-module="govuk-details">
+                      <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                        Fit note radio error
+                        </span>
+                      </summary>
+                      <div class="govuk-!-padding-bottom-6"></div>
+                      <form class="form" action="dev-error-do-you-have-a-fit-note" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>2. Unselected Radio Button Error</b></button></form>
+
+                  </details>
+
+                  <h2 class="govuk-heading-s">
+                      3. How did you obtain your fit note error</h2>
+
+                  <details class="govuk-details" data-module="govuk-details">
+                      <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                        Fit note journey selection radio error
+                        </span>
+                      </summary>
+                      <div class="govuk-!-padding-bottom-6"></div>
+                      <form class="form" action="dev-error-three-options" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>3. Unselected Radio Button Error</b></button></form>
+
+                  </details>
+
+                  <h2 class="govuk-heading-s">
+                      4. The selected file must be smaller than 10MB</h2>
+
+                  <details class="govuk-details" data-module="govuk-details">
+                      <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                        File size error prototypes
+                        </span>
+                      </summary>
+                      <div class="govuk-!-padding-bottom-6"></div>
+                      <form class="form" action="dev-error-10mb-paper" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>4a. Paper: File Size Error</b></button></form>
+
+                      <form class="form" action="dev-error-10mb-sms" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>4b. SMS: File Size Error</b></button></form>
+
+                      <form class="form" action="dev-error-10mb-email" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>4c. Email: File Size Error</b></button></form>
+                  </details>
+
+                  <h2 class="govuk-heading-s">
+                      5. The selected file must be a JPG, JPEG, BMP, PNG, TIF or PDF</h2>
+
+                  <details class="govuk-details" data-module="govuk-details">
+                      <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                        File-type error prototypes
+                        </span>
+                      </summary>
+                      <div class="govuk-!-padding-bottom-6"></div>
+                      <form class="form" action="dev-error-file-type-paper" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>5a. Paper: File-Type Error</b></button></form>
+
+                      <form class="form" action="dev-error-file-type-sms" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>5b. SMS: File-Type Error</b></button></form>
+
+                      <form class="form" action="dev-error-file-type-email" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>5c. Email: File-Type Error</b></button></form>
+
+                  </details>
+
+                  <h2 class="govuk-heading-s">
+                      6. Selected file must be clear and readable, containing the whole fit note</h2>
+
+                  <details class="govuk-details" data-module="govuk-details">
+                      <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                        Reading error prototypes
+                        </span>
+                      </summary>
+                      <div class="govuk-!-padding-bottom-6"></div>
+                      <form class="form" action="dev-error-clear-paper" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>6a. Paper: Reading Error</b></button></form>
+
+                      <form class="form" action="dev-error-clear-sms" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>6b. SMS: Reading Error</b></button></form>
+
+                      <form class="form" action="dev-error-clear-email" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>6c. Email: Reading Error</b></button></form>
+
+                  </details>
+
+                  <h2 class="govuk-heading-s">
+                      7. You must select a file to continue</h2>
+
+                  <details class="govuk-details" data-module="govuk-details">
+                      <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                        Unselected file error prototypes
+                        </span>
+                      </summary>
+                      <div class="govuk-!-padding-bottom-6"></div>
+                      <form class="form" action="dev-error-file-continue-paper" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>7a. Paper: Unselected File Error</b></button></form>
+
+                      <form class="form" action="dev-error-file-continue-sms" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>7b. SMS: Unselected File Error</b></button></form>
+
+                      <form class="form" action="dev-error-file-continue-email" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>7c. Email: Unselected File Error</b></button></form>
+
+                  </details>
+
+                  <h2 class="govuk-heading-s">
+                      8. Enter a National Insurance number in the correct format</h2>
+                  <details class="govuk-details" data-module="govuk-details">
+                      <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                        National Insurance number error prototype
+                        </span>
+                      </summary>
+                      <div class="govuk-!-padding-bottom-6"></div>
+                      <form class="form" action="dev-error-ni-number-format" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>8. NI Number Error</b></button></form>
+                  </details>
+
+                  <h2 class="govuk-heading-s">
+                      9. Address error prototypes</h2>
+                  <details class="govuk-details" data-module="govuk-details">
+                      <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                        Address error prototypes
+                        </span>
+                      </summary>
+                      <div class="govuk-!-padding-bottom-6"></div>
+                      <b>8a.</b> Enter your post code</p>
+                      <form class="form" action="dev-error-post-code" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>9a. Unentered Post Code Error</b></button></form>
+                      <h2 class="govuk-heading-s">
+                          8b. Enter a real post code</h2>
+                      <form class="form" action="dev-error-real-post-code" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>9b. Real Post Code Error</b></button></form>
+                      <h2 class="govuk-heading-s">
+                          8c. Enter your house name or number</h2>
+                      <form class="form" action="dev-error-house-name-or-number" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>9c. House Address Error</b></button></form>
+                  </details>
+
+                  <h2 class="govuk-heading-s">
+                      10. Text message selection errors</h2>
+                  <details class="govuk-details" data-module="govuk-details">
+                      <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                        Text message error prototypes
+                        </span>
+                      </summary>
+                      <div class="govuk-!-padding-bottom-6"></div>
+                      <p>
+                          <b>6a.</b> Select yes if you would like to receive a text message</p>
+                      <form class="form" action="dev-error-yes-text-message" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>10a. Text Message Unselected Error</b></button></form>
+                      <p><b>6b.</b> Enter a mobile number, like 07700 900 982 or +44 7700 900 982</p>
+                      <form class="form" action="dev-error-mobile-number-example" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>10b. Mobile Number Error</b></button></form>
+                  </details>
 
 
-              <h2 class="govuk-heading-s">
-                11. Upload errors</h2>
+
+
+                  <div class="govuk-inset-text">
+                      <!DOCTYPE html>
+                      <style>
+
+            .welsh-flag {max-width: 20%}
+            .welsh-flag {max-height: auto}
+    </style>
+                      <img src="/public/images/welsh-flag.png" class="welsh-flag" alt="welsh-flag">
+                      </html>
+                      <div class="govuk-!-padding-bottom-3"></div>
+                      <b>The Welsh error messages</b> are designed for the Development Team. They are identical to the the above English error messages, but in the <b>Welsh language</b>. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.
+                  </div>
+
+                  <form class="form" action="welsh-dev-500-error" method="post">
+                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>Welsh 500 Server Error</b></button></form>
+
+              </div>
+          </div>
+
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
+          Prototypes for Design Team for User Testing
+        </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
+            <p class='govuk-body'>This section is for the Design Team to test new features with users. This section is <b>not</b> for the Development Team. The Development Team should refer to <b>Prototype for Developers</b> section.</p>
+
+            <h2 class="govuk-heading-s">Fit Note Baseline Prototypes</h2>
+
             <details class="govuk-details" data-module="govuk-details">
-                <summary class="govuk-details__summary">
-                  <span class="govuk-details__summary-text">
-                  Upload error prototypes
-                  </span>
-                </summary>
-                <div class="govuk-!-padding-bottom-6"></div>
-                <p>
-                    Password locked PDF fit note prototype</p>
-                    <p class="govuk-body">
-                      <a href="/errors/release2-locked-pdf" class="govuk-link">Release 2 prototype</a>.
-                    </p>
-                
+              <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v1 Prototypes</b>
+    </span>
+              </summary>
+              <div class="govuk-details__text">
+                <form class="form" action="/start-prototype-v1" method="post">
+                  <p> The Baseline v1 Prototypes are designed using <b>the questions and processes from the Beta.</b></p>
+                  <div class="govuk-!-padding-bottom-4"></div>
+                  <p class="govuk-body"><b>Prototype v1 versions</b>:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li><b>v1a</b> - follows the <b>"Desktop and laptop"</b> radio button</li>
+                    <li><b>v1b</b> - follows the <b>"Phone and tablet"</b> radio button</li></ul>
+                  <div class="govuk-!-padding-bottom-7"></div>
+                  <button class="govuk-button" data-module="govuk-button">Baseline Prototype v1a</button></form>
+                <form class="form" action="/start-prototype-v1-phone" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Baseline Prototype v1b</button></form>
+              </div>
             </details>
 
 
-              <div class="govuk-inset-text">
-                  <!DOCTYPE html>
-                  <style>
 
-        .welsh-flag {max-width: 20%}
-        .welsh-flag {max-height: auto}
-</style>
-                  <img src="/public/images/welsh-flag.png" class="welsh-flag" alt="welsh-flag">
-                  </html>
-                  <div class="govuk-!-padding-bottom-3"></div>
-                  <b>The Welsh error messages</b> are designed for the Development Team. They are identical to the the above English error messages, but in the <b>Welsh language</b>. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v2 Prototypes</b>
+    </span>
+              </summary>
+              <div class="govuk-details__text">
+                <form class="form" action="/start-prototype-v2" method="post">
+                  <p> The Baseline v2 Prototypes v2 are designed using a newly introduced GDS component, the <b>step-by-step navigation bar</b> to periodically help claimants. <b>This navigation bar is positioned in the first two-thirds of the form</b>.</p>
+                  <div class="govuk-!-padding-bottom-4"></div>
+                  <p class="govuk-body"><b>Prototype v2 versions</b>:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li><b>v2a</b> - contains no images</li>
+                    <li><b>v2b</b> - contains images from Beta</li>
+                    <li><b>v2c</b> - contains Project Falcon customised images</li>
+                    <li><b>v2d</b> - integrates a <b>Details</b> GDS component to make the step-by-step navigation bar more discrete. Contains <b>check your answers</b> functionality</li></ul>
+
+                  <div class="govuk-!-padding-bottom-4"></div>
+                  <b>Please note:</b> to aid quick and agile prototyping <b>v2b</b> and <b>v2c</b> are just programmed to <b>only</b> show the <b>Save and upload your fit note screen</b>.
+                  <div class="govuk-!-padding-bottom-7"></div>
+
+                  <button class="govuk-button" data-module="govuk-button">Baseline Prototype v2a</button></form>
+                <form class="form" action="/two-thirds-step-by-step-navigation-beta-images" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Baseline Prototype v2b</button></form>
+                <form class="form" action="/two-thirds-step-by-step-navigation-new-images" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Baseline Prototype v2c</button></form>
+                <form class="form" action="/start-prototype-v2-help" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Baseline Prototype v2d</button></form>
               </div>
+            </details>
 
-              <form class="form" action="welsh-dev-500-error" method="post">
-                  <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>Welsh 500 Server Error</b></button></form>
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v3 Prototypes</b>
+    </span>
+              </summary>
+              <div class="govuk-details__text">
+                <form class="form" action="/start-prototype-v3" method="post">
+                  <p>The Baseline v3 Prototypes are designed using the <b>same step-by-step navigation bar as Prototype v2</b>, but the bar is positioned in the <b>right-hand-side column</b>.</p>
+                  <div class="govuk-!-padding-bottom-4"></div>
+                  <p class="govuk-body"><b>Prototype v3 versions</b>:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li><b>v3a</b> - contains no images</li>
+                    <li><b>v3b</b> - contains images from Beta</li>
+                    <li><b>v3c</b> - contains Project Falcon customised images</li>
+                    <li><b>v3d</b> - integrates a <b>Details</b> GDS component to make the step-by-step navigation bar more discrete. Contains <b>check your answers</b> functionality</li>
+                    <div class="govuk-!-padding-bottom-4"></div>
+                    <b>Please note:</b> to aid quick and agile prototyping <b>v3b</b> and <b>v3c</b> are just programmed to <b>only</b> show the <b>Save and upload your fit note screen</b>.</ul>
+                  <div class="govuk-!-padding-bottom-7"></div>
+
+                  <button class="govuk-button" data-module="govuk-button">Baseline Prototype v3a</button></form>
+                <form class="form" action="/one-third-step-by-step-navigation-beta-images" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Baseline Prototype v3b</button></form>
+                <form class="form" action="/one-third-step-by-step-navigation-new-images" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Baseline Prototype v3c</button></form>
+                <form class="form" action="/start-prototype-v3-help" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Baseline Prototype v3d</button></form>
+                </ul>
+              </div>
+            </details>
+
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v4 Prototype</b>
+    </span>
+              </summary>
+              <div class="govuk-details__text">
+                <form class="form" action="/v4-start-prototype" method="post">
+                  <p><b>Prototype v4</b> is designed with a series of 'nice to have' new pages for User Testing in the future, specifically with an emphasis on enabling GPs and Job Centre staff. It was decided by Team Falcon to focus on these 'nice to haves' later-on in the project. Therefore for UI Testing please refer to v5</b>.</p>
+                  <div class="govuk-!-padding-bottom-4"></div>
+                  <p class="govuk-body"><b>Prototype v4:</b> incorporates new features such as:</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li>An image of a Fit Note on the Start Page</li>
+                    <li>The addition of a <b>Warning</b> component that states: <i>This service does not accept or process med 10s, isolation notes or letters from medical professionals</i>.</li>
+                    <li>The a <b>Details</b> component with aids the user with additional information for Med 10s, isolation notes and letters from medical professionals.</li>
+                    <li>The addition of a <b>Details</b> component with an image of an envelope to aid users with Freepost.</li>
+                    <li>The addition of a <i>Do you have a fit note?</i> question and image to ensure that the user is using the right service</li>
+                    <li>The addition of a <b>Inset text</b> component stating: <i>Please ensure that your file upload format is either PDF, JPEG or PNG. Do not upload a screenshot. Recommended file size is between 500KB and 10MB</i>.</li>
+                    <li>The addition of a <b>Details</b> component stating: <i>What is my National Insurance number?</i></li>
+                    <li>The addition of a page stating: <i>How did you get your fit note? Have you discussed a rehabilitation plan to get back to work?</i>.</li>
+                    <li>The addition of a page stating: <i>Have you discussed temporary alternative roles with your employer?</i></li>
+                    <li>The addition of a page with a Submit your fit note checkbox.</li>
+                    </li></ul>
+                  </p>
+
+                  <div class="govuk-!-padding-bottom-7"></div>
+
+                  <button class="govuk-button" data-module="govuk-button">Prototype v4</button></form>
+                <form class="form" action="v4-start-prototype" method="post">
+                </form>
+
+            </details>
+
+            <h2 class="govuk-heading-s">Fit Note Prototypes for A/B Testing</h2>
+
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v5 Prototypes</b>
+    </span>
+              </summary>
+              <div class="govuk-details__text">
+                <form class="form" action="/v5a-start-prototype" method="post">
+                  <p><b>Prototypes v5</b> are designed for A/B UI testing on 19th and 20th November 2020.</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li><b>v5a</b> - a GDS-refreshed version of Beta to be used as the Control during A/B Testing.</li>
+                    <li><b>v5b</b> - Incorporates several new features from <b>Prototype v4</b> (but not all). The overall aim is to test if the user knows what a fit note is visually and if they know how to upload their fit note correctly (with an emphasis on PDF via mobile and, <i>not</i> as a screenshot).</li>
+                    </li></ul>
+                  </p>
+
+                  <div class="govuk-!-padding-bottom-1"></div>
+
+                  <button class="govuk-button" data-module="govuk-button">Prototype v5a</button></form>
+                <form class="form" action="v5a-start-prototype" method="post">
+                </form>
+
+                <form class="form" action="/v5b-start-prototype" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Prototype v5b</button></form>
+                <form class="form" action="v5b-start-prototype" method="post">
+                </form>
+
+            </details>
+
+            <h2 class="govuk-heading-s">Fit Note Prototype for Typenote Survey Testing</h2>
+
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v6 Prototype</b>
+    </span>
+              </summary>
+              <div class="govuk-details__text">
+                <form class="form" action="/v6-start-prototype" method="post">
+                  <p><b>Prototype v6</b> is designed to test various Content and Components for <b>Typenote Survey Testing</b> starting Friday 27th November 2020. Screenshots will be taken from this prototype and used in Team Falcon's Typenote survey to compare against Content and Components from <b>Prototypes v1 - 5.</b></p>
+                  </p>
+
+                  <div class="govuk-!-padding-bottom-1"></div>
+
+                  <button class="govuk-button" data-module="govuk-button">Prototype v6</button></form>
+                <form class="form" action="v6-start-prototype" method="post">
+                </form>
+            </details>
+
+            <h2 class="govuk-heading-s">Fit Note Prototypes for A/B Testing</h2>
+
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v7 Prototypes</b>
+    </span>
+              </summary>
+              <div class="govuk-details__text">
+
+                  <p><b>Prototypes v7</b> are designed for A/B UI testing for the week starting on Monday 14th December. Please note that both prototypes contain features that the Design Team are confident will go into production, such as new images and Content.</p>
+                  <ul class="govuk-list govuk-list--bullet">
+                    <li><b>v7a</b> - is designed with a <b>Radio</b> component asking if the user got their fit note via paper, SMS or email. The users will then be redirected to one of three separate journeys.</li>
+                    <li><b>v7b</b> - is designed using an experimental <b>Accordion</b> component on the upload screen. On this screen the users can see the instructions for paper, SMS and email journeys.</li>
+                    </li></ul>
+                  </p>
+
+                  <div class="govuk-!-padding-bottom-1"></div>
+
+                <form class="form" action="/v7a-start-prototype" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Prototype v7a</button></form>
+
+                  <form class="form" action="/v7b-start-prototype" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Prototype v7b</button></form>
+                </form>
+            </details>
+
+              <h2 class="govuk-heading-s">Fit Note Prototype for Error & Accessibility Testing</h2>
+
+              <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v8 Prototype</b>
+    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+
+                      <p><b>Prototype v8</b> is to be tested the week starting 18th Jan 2021. It is built to test various errors and how users handle them.</p>
+                      <ul class="govuk-list govuk-list--bullet">
+                          <li><b>v8</b> - is designed for a journey where the user with have a the following errors <b>The selected file must be a Fit note that is clear and readable avoiding any shadows</b> and <b>The selected file must be a Fit note that is clear and readable including all 4 corners</b>.</li>
+                          </li></ul>
+                      </p>
+
+                      <div class="govuk-!-padding-bottom-1"></div>
+
+                      <form class="form" action="/v8-start" method="post">
+                          <button class="govuk-button" data-module="govuk-button">Prototype v8</button></form>
+              </details>
+
+              <h2 class="govuk-heading-s">Fit Note Prototype with Content changes after Accessibility Testing</h2>
+
+              <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v9 Prototype</b>
+    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+
+                      <p><b>Prototype v9</b> contains several Content changes based on UR Accessibility Testing of <b>Prototype v8</b></p>
+                      <ul class="govuk-list govuk-list--bullet">
+                          </li></ul>
+                      </p>
+
+                      <div class="govuk-!-padding-bottom-1"></div>
+
+                      <form class="form" action="/v9-start" method="post">
+                          <button class="govuk-button" data-module="govuk-button">Prototype v9</button></form>
+              </details>
+
+
+              <h2 class="govuk-heading-s">Fit Note Prototype incorporating changes recommended by GDS Assessors post-GDS mock assessment</h2>
+
+              <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v10 Prototype</b>
+    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+
+                      <p><b>Prototype v10</b> contains several recommended by GDS.</p>
+                      <ul class="govuk-list govuk-list--bullet">
+                          </li></ul>
+                      </p>
+
+                      <div class="govuk-!-padding-bottom-1"></div>
+
+                      <form class="form" action="/v10-start" method="post">
+                          <button class="govuk-button" data-module="govuk-button">Prototype v10</button></form>
+              </details>
+
+              <h2 class="govuk-heading-s">Fit Note Prototype incorporating changes recommended via Content Crits and UR sessions with DWP Support Advisors for UR Testing</h2>
+
+              <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v11 Prototype</b>
+    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+
+                      <p><b>Prototype v11</b> contains several changes recommended by the Content and DWP Support Advisory Communities.</p>
+                      <ul class="govuk-list govuk-list--bullet">
+                          </li></ul>
+                      </p>
+
+                      <div class="govuk-!-padding-bottom-1"></div>
+
+                      <form class="form" action="/v11-start" method="post">
+                          <button class="govuk-button" data-module="govuk-button">Prototype v11</button></form>
+              </details>
+
+
+              <h2 class="govuk-heading-s">Fit Note Prototype incorporating changes recommended by <b>A/B User Testing</b> on the week starting 16th March 2021</h2>
+
+              <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v12 Prototype</b>
+    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+
+                      <p><b>Prototype v12</b> contains changes post-A/B Testing with several fit note claimants.</p>
+                      <ul class="govuk-list govuk-list--bullet">
+                          </li></ul>
+                      </p>
+
+                      <div class="govuk-!-padding-bottom-1"></div>
+
+                      <form class="form" action="/v12-start" method="post">
+                          <button class="govuk-button" data-module="govuk-button">Prototype v12</button></form>
+              </details>
+
+
+              <h2 class="govuk-heading-s">Fit Note Prototypes for A/B Testing post-May 2021</h2>
+
+              <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v13 Prototypes</b>
+    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+
+                      <p><b>Prototype v13a</b> reverts back to what is <b>currently in Live (7/5/2021) with some amended Content</b>. DWP has instructed Team Falcon to focus on accessibility needs instead of testing screens such as 'doubled-sided fit notes'. The thinking behind this is that the fit note service may need a complete refresh.</p>
+                      <ul class="govuk-list govuk-list--bullet">
+                          </li></ul>
+                      </p>
+
+                      <div class="govuk-!-padding-bottom-1"></div>
+
+                      <form class="form" action="/v13a-start" method="post">
+                          <button class="govuk-button" data-module="govuk-button">Prototype v13a</button></form>
+
+                      <p><b>Prototype v13b</b> copies <b>Prototype v13a</b> without any images.</p>
+                      <ul class="govuk-list govuk-list--bullet">
+                          </li></ul>
+                      </p>
+
+                      <div class="govuk-!-padding-bottom-1"></div>
+
+                      <form class="form" action="/v13b-start" method="post">
+                          <button class="govuk-button" data-module="govuk-button">Prototype v13b</button></form>
+              </details>
+
+              </details>
+
+              </summary>
 
 
 
+              <h2 class="govuk-heading-s">Fit note 'Upload' screens experimentation</h2>
 
+              <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v14 Prototype Screens</b>
+    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+
+                      <a>The <a href="https://design-system.service.gov.uk/patterns/step-by-step-navigation/">step-by-step navigation bar</a> on the paper fit note upload screen in previous prototypes has a few accessibility issues. The step-by-step navigation bar is an experimental pattern and may need further testing by GDS. The purpose of the <b>v14 Prototype Screens</b> is to experiment with different ways of getting users to upload their fit note wihtout the step-by-step navigation bar.</p>
+                      <ul class="govuk-list govuk-list--bullet">
+                          </li></ul>
+                      </p>
+
+                      <div class="govuk-!-padding-bottom-1"></div>
+
+                      <form class="form" action="/v14a-upload-paper" method="post">
+                          <button class="govuk-button" data-module="govuk-button">Prototype v14a Screen</button></form>
+
+                          <form class="form" action="/v14b-upload-paper" method="post">
+                              <button class="govuk-button" data-module="govuk-button">Prototype v14b Screen</button></form>
+
+                          <form class="form" action="/v14c-upload-paper" method="post">
+                              <button class="govuk-button" data-module="govuk-button">Prototype v14c Screen</button></form>
+
+                          <form class="form" action="/v14d-upload-paper" method="post">
+                              <button class="govuk-button" data-module="govuk-button">Prototype v14d Screen</button></form>
+
+                          <form class="form" action="/v14e-upload-paper" method="post">
+                              <button class="govuk-button" data-module="govuk-button">Prototype v14e Screen</button></form>
+
+                          <form class="form" action="/v14f-upload-paper" method="post">
+                              <button class="govuk-button" data-module="govuk-button">Prototype v14f Screen</button></form>
+
+                          <div class="govuk-!-padding-bottom-1"></div>
+
+              </details>
 
               </details>
 
 
 
+              <h2 class="govuk-heading-s">New fit note Content prototype</h2>
 
-<details class="govuk-details">
-  <summary class="govuk-details__summary">
-    <span class="govuk-details__summary-text">
-      Release 2 prototype errors
-    </span>
-  </summary>
- 
-<br>
-<br>
-
-<h3 class="govuk-heading-s">1. We cannot process the type of file you selected.</h3>
-
-<p>We cannot process the type of file you selected. You will need to make another copy of your fit note in one of these file types: JPG, JPEG, BMP, PNG, TIFF, HEIC, HEIF or PDF.</p>
-<p class="govuk-body">
-  <a href="https://dwpdigital.atlassian.net/browse/HTF-2845" class="govuk-link" rel="noreferrer noopener" target="_blank">Jira ticket 2845 (opens in new tab)</a>
-</p>
-
-<p class="govuk-body">
-  <a href="errors/release2/file-type-english.html" class="govuk-link" rel="noreferrer noopener" target="_blank">File type error message in English (opens in new tab)</a>
-</p>
-<p class="govuk-body">
-  <a href="errors/release2/file-type-welsh.html" class="govuk-link" rel="noreferrer noopener" target="_blank">File type error message in Welsh (opens in new tab)</a>
-</p>
-
-
-
-<br>
-<br>
-
-
-<h3 class="govuk-heading-s">2.The file you selected is too large to be processed. </h3>
-
-<p>The file you selected is too large to be processed. It must be smaller than 10MB.</p>
-
-<p class="govuk-body">
-  <a href="https://dwpdigital.atlassian.net/browse/HTF-2852" class="govuk-link" rel="noreferrer noopener" target="_blank">Jira ticket 2852 (opens in new tab)</a>
-</p>
-<p class="govuk-body">
-  <a href="errors/release2/file-size-english.html" class="govuk-link" rel="noreferrer noopener" target="_blank">File size error message in English (opens in new tab)</a>
-</p>
-<p class="govuk-body">
-  <a href="errors/release2/file-size-welsh.html" class="govuk-link" rel="noreferrer noopener" target="_blank">File size error message in Welsh (opens in new tab)</a>
-</p>
-
-<br>
-<br>
-
-
-<h3 class="govuk-heading-s">3.You have tried to upload your fit note too many times.</h3>
-
-<p>You have tried to upload your fit note too many times. Wait 5 minutes and upload it again or you can post it to: Freepost, DWP ESA 26. You do not need a stamp.</p>
-
-<p class="govuk-body">
-  <a href="https://dwpdigital.atlassian.net/browse/HTF-2856" class="govuk-link" rel="noreferrer noopener" target="_blank">Jira ticket 2856 (opens in new tab)</a>
-</p>
-<p class="govuk-body">
-  <a href="errors/release2/file-multiple-english.html" class="govuk-link" rel="noreferrer noopener" target="_blank">File multiple times error message in English (opens in new tab)</a>
-</p>
-<p class="govuk-body">
-  <a href="errors/release2/file-multiple-welsh.html" class="govuk-link" rel="noreferrer noopener" target="_blank">File multiple times error message in Welsh (opens in new tab)</a>
-</p>
-
-
-
-</details>
-
-
-
-
-              </div>
-            </div>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-          <div class="govuk-accordion__section ">
-            <div class="govuk-accordion__section-header">
-              <h2 class="govuk-accordion__section-heading">
-          <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
-            Prototype version history
-          </span>
-              </h2>
-            </div>
-            <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-  
-              <div class="govuk-warning-text">
-                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-                <strong class="govuk-warning-text__text">
-                  <span class="govuk-warning-text__assistive">Warning</span>
-                  These are old prototypes that are not for production and the latest prototype may be subject to change. 
-                </strong>
-              </div>
-  
-  
-              <h3 class="govuk-heading-s">
-                Full prototype versions</h3>   
-
-                <form class="form" action="/dev1/dev-start" method="post">
-                  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Prototype - v1</button></form>
-
-              
-
-                  <form class="form" action="/dev2/dev-start" method="post">
-                    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Prototype - v2</button></form>
-  
-              
-                    <form class="form" action="/dev3/dev-start" method="post">
-                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Prototype - v3</button></form>
-    
-                    
-                      <form class="form" action="/dev4/dev-start" method="post">
-                        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Prototype - v4</button></form>
-      
-                    
-                        <form class="form" action="/dev5/dev-start" method="post">
-                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Prototype - v5</button></form>
-        
-                          <form class="form" action="/dev6/dev-start" method="post">
-                            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Prototype - v6</button></form>
-          
-
-
-  
-
-  <!--- 
-
-  <h3 class="govuk-heading-s">
-    Prototype section versions</h3>   
-
-
-  <details class="govuk-details">
-    <summary class="govuk-details__summary">
-      <span class="govuk-details__summary-text">
-        Paper journey versions
-      </span>
-    </summary>
-    <div class="govuk-details__text">
-
-      <p class="govuk-body"><b>Version A</b></p>
-  
-  <h2 class="govuk-heading-s">V1.1 - Old content and link text saying: (open in new tab) </h2>
-  
-  
-                  <p class="govuk-body">This prototype version includes the old content before the latest iterations following the 01/02/2024 usability testing. </p>
-  
-                  <form class="form" action="/dev3-5/dev-guidance-paper" method="post">
-                    <button class="govuk-button" data-module="govuk-button">Start now</button></form>
-                
-               
-              
-  
-  
-            
-              <br>
-  
-  
-              <h2 class="govuk-heading-s">V1.2 - New content and link text saying: (open in new tab) </h2>
-              
-              
-                              <p class="govuk-body">This prototype includes the new content following the 01/02/2024 usability testing and the (open in new tab) link wording. </p>
-              
-                              <form class="form" action="/dev3-5/dev-guidance-paper-v1-1" method="post">
-                                <button class="govuk-button" data-module="govuk-button">Start now</button></form>
-
-
-
-                                <br>
-  
-                                
-                                <p class="govuk-body"><b>Version C</b></p>
-
-
-
-                                <h2 class="govuk-heading-s">V1.3 - Removal of details component at the bottom of the page</h2>
-                                
-                                
-                                                <p class="govuk-body">This prototype includes the removal of the details component following the 01/02/2024 usability testing </p>
-                                
-                                                <form class="form" action="/dev4/dev-guidance-paper3-v-1-1" method="post">
-                                                  <button class="govuk-button" data-module="govuk-button">Start now</button></form>
-
-
-
-
-
-
-                            
-                              </div>
-                          </details>
-  --->
-  
-                        </div>
-  
-  
-            </div>
-  
-
-            <div class="govuk-accordion__section ">
-              <div class="govuk-accordion__section-header">
-                <h2 class="govuk-accordion__section-heading">
-            <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
-              Usability testing prototypes
-            </span>
-                </h2>
-              </div>
-              <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-    
-            
-    
-    
-                <h3 class="govuk-heading-s">
-                  New upload journey usability testing prototype</h3>
-          
-                  <p class='govuk-body'>These are the prototypes used for usability testing March 2025. </p>
-          
-                    <br>
-                   
-          
-                    <h3 class="govuk-heading-s">
-                      New journey prototype</h3>
-          
-                      <p class="govuk-body">This prototype includes the following features:</p>
-          <ul class="govuk-list govuk-list--bullet">
-          <li><b>Fit note upload page </b>- one button to upload and choose file</li>
-          <li><b>NEW Second stage error page </b>- for OCR and Data matrix errors</li>
-          <li><b>NEW Second stage error page </b>- for Data matrix errors</li>
-          </ul>
-          <br>
-          
-          <form class="form" action="/sandbox/UR/upload-journey/dev-upload" method="post">
-            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Testing prototype 1 - Original</button></form>
-
-         
-                  <br>
-                  <br>
-    
-          
-          
-          
-          
-                <details class="govuk-details">
+              <details class="govuk-details" data-module="govuk-details">
                   <summary class="govuk-details__summary">
-                    <span class="govuk-details__summary-text">
-                      Usability testing prototypes November 2024
-                    </span>
+    <span class="govuk-details__summary-text">
+      <b>v15 Prototype Screens</b>
+    </span>
                   </summary>
                   <div class="govuk-details__text">
 
-
-                    <h3 class="govuk-heading-s">
-                      New feature usability testing prototypes</h3>
-              
-                      <p class='govuk-body'>These are the prototypes used for usability testing November 2024. </p>
-              
-                        <br>
-                       
-              
-                        <h3 class="govuk-heading-s">
-                          Testing prototype 1</h3>
-              
-                          <p class="govuk-body">This prototype includes the following features:</p>
-              <ul class="govuk-list govuk-list--bullet">
-              <li><b>Paper guidance page </b>- NINO information</li>
-              <li><b>Fitnote upload page </b>- file preview and image preview</li>
-              <li><b>National Insurance page </b>- Successful fit note upload alert</li>
-              </ul>
-              <br>
-              
-              <form class="form" action="/dev7/dev-guidance-paper" method="post">
-                <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Testing prototype 1 - Original</button></form>
-    
-                <form class="form" action="/dev9/dev-guidance-paper" method="post">
-                  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Testing prototype 1 - Iterated</button></form>
-                        
-                      <br>
-                      <br>
-              
-                      <h3 class="govuk-heading-s">
-                        Testing prototype 2</h3>
-              
-                        <p class="govuk-body">This prototype includes the following features:</p>
-              <ul class="govuk-list govuk-list--bullet">
-              <li><b>Digital guidance page </b>- NINO and password protected PDF information</li>
-              <li><b>Fitnote upload page </b>- Password protected PDF error message</li>
-              </ul>
-              <br>
-    
-              <form class="form" action="/dev8/dev-guidance-digital" method="post">
-                <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Testing prototype 2 - Original</button></form>
-    
-                <form class="form" action="/dev9/dev-guidance-digital" method="post">
-                  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Testing prototype 2 - Iterated</button></form>
-              
-                 
-              
-                    <br>
-                    <br>
-              
-              
-              
-                    <h3 class="govuk-heading-s">
-                      Submission page varients</h3>
-              
-                      <p class="govuk-body">
-                        <a href="/dev7/dev-confirmation-digital" class="govuk-link govuk-link--no-visited-state">Submission page varient 1</a><br>
-                        <a href="/dev7/dev-confirmation-digital2" class="govuk-link govuk-link--no-visited-state">Submission page varient 2</a><br>
-                        <a href="/dev7/dev-confirmation-digital2" class="govuk-link govuk-link--no-visited-state">Submission page varient 2 (Iterated)</a>
+                      <p>Prototype v15 focuses on refreshing the Content after a Highlighting exercise with Claimants.
+                        15/07: New content updates following content review - images removed from 'Do you have a fitnote page' & no fitnote page.
+                        25/08: Updated content, added picture onto digital upload guidance 
                       </p>
 
+                          <div class="govuk-!-padding-bottom-1"></div>
+
+                          <form class="form" action="/v15-start" method="post">
+                              <button class="govuk-button" data-module="govuk-button">Prototype v15</button></form>
+
+
+                          <div class="govuk-!-padding-bottom-1"></div>
+
+              </details>
+
+              </details>
 
 
 
-                  </div>
-                </details>
-          
-  
-  
-    
-                          </div>
-    
-    
-              </div>
+              </summary>
 
-            
+              <h2 class="govuk-heading-s">Fitnote prototype for UR 29/09/21</h2>
+
+              <details class="govuk-details" data-module="govuk-details">
+                  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      <b>v16 Prototype Screens</b>
+    </span>
+                  </summary>
+                  <div class="govuk-details__text">
+
+                      <p>Prototype v16 removes text message pages and changes initial question from 'do you have a fitnote' to 'have you applied for ESA'. This is due to a large amount of fitnotes being submitted by claimants when they have not applied for ESA, so they are not eligible for our service. An error message has also been added on upload pages.
+                      </p>
+
+                          <div class="govuk-!-padding-bottom-1"></div>
+
+                          <form class="form" action="/v16-start" method="post">
+                              <button class="govuk-button" data-module="govuk-button">Prototype v16</button></form>
+
+
+                          <div class="govuk-!-padding-bottom-1"></div>
+
+              </details>
+
+              </details>
+
+
+
+              </summary>
 
 
           </div>
-
-
-          <br>
-          <br>
-
-
-          <p class="govuk-body">
-            The design team prototypes can be found on <a href="old-testing.html" class="govuk-link">a seperate page</a>.
-          </p>
-
         </div>
       </div>
 
 
 
-    
+      <div class="govuk-warning-text">
+            <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+            <strong class="govuk-warning-text__text">
+              <span class="govuk-warning-text__assistive">Warning</span>
+              'Prototypes for Design Team for User Testing' are not for production!
+            </strong>
+          </div>
 
     </div>
   </div>

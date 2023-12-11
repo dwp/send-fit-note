@@ -1,4 +1,4 @@
- {% extends "layout-ab-test.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
 Choose a file to upload - Send your fit note - GOV.UK
@@ -21,29 +21,22 @@ Choose a file to upload - Send your fit note - GOV.UK
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-l">Sending your paper fit note to DWP</h1>
+    <h1 class="govuk-heading-l" id="top">Sending your paper fit note to DWP</h1>
 
     <p>If you have a paper fit note, you can use this service to send it to us online. If you cannot send it online, 
-      <a href="dev-guidance-post" aria-label="Read more about what to do if you cannot send your fit note online" class="govuk-link" rel="noreferrer noopener" target="_blank">you can post it (opens in new tab)</a>.
-        </p>
+      <a href="#postal" aria-label="Read more about what to do if you cannot send your fit note online">
+       you can post it</a>.</p>
 
   <h2 class="govuk-heading-m">Send online</h2>
 
-  <p class="govuk-body">There are two ways to send your paper fit note online. You can either:</p>
-  <ul class="govuk-list govuk-list--bullet">
-    <li>take a photo of your fit note</li>
-    <li>scan your fit note</li>
-  </ul>
-  
+  <p>To use this service, you will need to take a photo of your fit note or scan it.</p>
+
   <p>It's important that the photo or scan of your fit note is clear so it can be read by our system. If it cannot be read, it could be rejected.</p>
-
- 
-
   <style>
     .fit-note-zoom {max-width: 100%}
     .fit-note-zoom {max-height: auto}
     </style>
-   <img src="/public/images/20231219-default.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">  
+   <img src="/public/images/fit-note-2023.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images">  
 
    <p>The example image with the red cross could be rejected because the edges are missing. The example image with the green tick would be accepted because the whole fit note is visible.</p>
   
@@ -76,9 +69,31 @@ Choose a file to upload - Send your fit note - GOV.UK
     <form class="form" action="dev-upload2" method="post">
       <button class="govuk-button" data-module="govuk-button">Continue to upload</button></form>
 
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          What to do if you cannot send your fit note online
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <h2 class="govuk-heading-m" id="postal">Send by post</h2>
+       <p>Posting your fit note means it could take longer for us to process your claim.</p>
+       <p> If you cannot send it to us online you can post it, without a stamp, to:</p>
+       <ul class="govuk-list">
+         <li>Freepost</li>
+         <li>DWP ESA 26</li></ul>
+      </div>
+    </details>
+
+    <a class="govuk-link govuk-link--no-visited-state back-to-top__link" href="#top">
+      <svg role="presentation" focusable="false" class="back-to-top__icon" xmlns="http://www.w3.org/2000/svg" width="13" height="17" viewBox="0 0 13 17" style="padding-right:5px;">
+        <path fill="currentColor" d="M6.5 0L0 6.5 1.4 8l4-4v12.7h2V4l4.3 4L13 6.4z"></path>
+      </svg>Back to top
+    </a>
+
   </div>
 
-<div class="govuk-grid-row">
+  <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-third">
     <div class="govuk-inset-text">
       <h2 class="govuk-heading-m">Talk to an advisor</h2>
@@ -93,7 +108,6 @@ Choose a file to upload - Send your fit note - GOV.UK
   </div>
 
 </div>
-
 
 
 
