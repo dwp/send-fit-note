@@ -23,9 +23,24 @@ Choose a file to upload - Send your fit note - GOV.UK
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l" id="top">Sending your paper fit note to DWP</h1>
 
-    <p>If you have a paper fit note, you can use this service to send it to us online. If you cannot send it online, 
-      <a href="#postal" aria-label="Read more about what to do if you cannot send your fit note online">
-       you can post it</a>.</p>
+    <script>
+      // JavaScript to open details and scroll down
+      function openDetails() {
+        var detailsElement = document.getElementById('detailsComponent');
+        if (detailsElement) {
+          detailsElement.open = true;
+          detailsElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    </script>
+    
+    <p>
+      If you have a paper fit note, you can use this service to send it to us online. 
+      If you cannot send it online, 
+      <a href="#postal" aria-label="Read more about what to do if you cannot send your fit note online" onclick="openDetails()">
+        you can post it
+      </a>.
+    </p>
 
   <h2 class="govuk-heading-m">Send online</h2>
 
@@ -69,7 +84,7 @@ Choose a file to upload - Send your fit note - GOV.UK
     <form class="form" action="dev-upload2" method="post">
       <button class="govuk-button" data-module="govuk-button">Continue to upload</button></form>
 
-    <details class="govuk-details" data-module="govuk-details">
+    <details id="detailsComponent" class="govuk-details">
       <summary class="govuk-details__summary">
         <span class="govuk-details__summary-text">
           What to do if you cannot send your fit note online
