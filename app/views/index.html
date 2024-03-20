@@ -17,23 +17,32 @@
       <h1 class="govuk-heading-xl">
         Fit Note Prototype Versions</h1>
 
-        <h2 class="govuk-heading-m">Please find the Fit Note prototype versions currently under test and refinement</h2>
+        <p> For any questions, please contact: <a href="mailto:rebecca.williams5@@engineering.digital.dwp.gov.uk">Rebecca Williams</a>.
 
-      <p> The Baseline Prototypes are developed leveraging the questions from <b><a href="https://www.gov.uk/send-fit-note">Send your fit note for your ESA claim</a></b> from the current live Beta.</p>
+          <p class='govuk-body'> You can access the <a href="https://www.gov.uk/send-fit-note" class="govuk-link" rel="noreferrer noopener" target="_blank">live service of SYFN here (opens in new tab)</a>.</p>
 
 
-      <p> For any questions, please contact: <a href="mailto:rebecca.williams5@@engineering.digital.dwp.gov.uk">Rebecca Williams</a>.
+     
       </p>
+      <br>
+      <br>
+      
+      <h3 class="govuk-heading-m">
+        Usability testing prototype</h3>
 
-        <!DOCTYPE html>
-        <style>
-                              .falcon {max-width: 15%}
-                              .falcon {max-height: auto}
-        </style>
-        <center>
-            <img src="/public/images/falcon.png" class="falcon" alt="team falcon logo">
-        </center>
-        </html>
+        <p class='govuk-body'>This is the latest prototype created for <b>usability testing only</b>. Developers need to look in the version history section to find the version they need.</p>
+
+
+        <a href="/usability/dev-start" role="button" draggable="false" class="govuk-button govuk-button--start" data-module="govuk-button">
+          Start now
+          <svg class="govuk-button__start-icon" xmlns="http://www.w3.org/2000/svg" width="17.5" height="19" viewBox="0 0 33 40" aria-hidden="true" focusable="false">
+            <path fill="currentColor" d="M0 0h13l20 20-20 20H0l20-20z" />
+          </svg>
+        </a>
+
+          
+        <br>
+        <br>
 
       <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
         <div class="govuk-accordion__section ">
@@ -45,35 +54,43 @@
             </h2>
           </div>
           <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
-            <p class='govuk-body'>This section is for the Development Team. Please note that various elements of the Prototype will be <b>subject to change</b> as per User Testing. The Design Team will coordinate changes with the BA Team.</p>
+
+
+          
+
+
+            <h3 class="govuk-heading-m">
+              Sprint prototype</h3>
+
+
 
             <div class="govuk-inset-text">
-                <b>Sprint Prototype</b> is designed for the Development Team. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.
                 <p>Tickets included for design changes in sprint 29: <a href="https://dwpdigital.atlassian.net/browse/HTF-1085">HTF-1085 - 3 to 2 radio buttons </a>
                   <p><a href="https://dwpdigital.atlassian.net/browse/HTF-1086">HTF-1086 - Split upload and guidance pages (paper) </a></p><a href="https://dwpdigital.atlassian.net/browse/HTF-1087">HTF-1087 - Split upload and guidance pages (digital) </a></p>
             </div>
 
             <form class="form" action="/dev3/dev-start" method="post">
               <button class="govuk-button" data-module="govuk-button">Sprint Prototype</button></form>
+<br>
+<br>
+              <h3 class="govuk-heading-m">
+                Release 1 prototype</h3>
+
+                <p class='govuk-body'>This prototype version was created in 2023 and contains both an English and Welsh version.</p>
+
 
               <form class="form" action="/dev4/dev-start" method="post">
-                <button class="govuk-button" data-module="govuk-button">Release 1 - 2023</button></form>
+                <button class="govuk-button" data-module="govuk-button">Release 1 - English</button></form>
 
-              <div class="govuk-inset-text">
-                  <!DOCTYPE html>
-                  <style>
+                <form class="form" action="welsh-dev-start" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Release 1 - Welsh</button></form>
 
-            .welsh-flag {max-width: 20%}
-            .welsh-flag {max-height: auto}
-    </style>
-                  <img src="/public/images/welsh-flag.png" class="welsh-flag" alt="welsh-flag">
-                  </html>
-                  <div class="govuk-!-padding-bottom-3"></div>
-                  <b>Welsh Prototype</b> is designed for the Development Team. It is identical to the the above Catalogue Prototype, but in the <b>Welsh language</b>. Please develop the look and feel of the prototype and <b>do not replicate the code</b>.
-              </div>
 
-              <form class="form" action="welsh-dev-start" method="post">
-                  <button class="govuk-button" data-module="govuk-button">Welsh Prototype</button></form>
+                  <br>
+<br>
+              <h3 class="govuk-heading-m">
+                Release 2 prototype</h3>
+
 
           </div>
         </div>
@@ -82,7 +99,7 @@
               <div class="govuk-accordion__section-header">
                   <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-          Error Messages for Developers
+          Error Messages
         </span>
                   </h2>
               </div>
@@ -304,42 +321,7 @@
 
 
 
-          <div class="govuk-accordion__section ">
-            <div class="govuk-accordion__section-header">
-              <h2 class="govuk-accordion__section-heading">
-          <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
-            Prototypes for Design Team for User Testing
-          </span>
-              </h2>
-            </div>
-            <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-  
-              <div class="govuk-warning-text">
-                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-                <strong class="govuk-warning-text__text">
-                  <span class="govuk-warning-text__assistive">Warning</span>
-                  'Prototypes for Design Team for User Testing' are not for production!
-                </strong>
-              </div>
-  
-  
-              <p class="govuk-body">
-                The older design team prototypes can be found on <a href="old-testing.html" class="govuk-link">a seperate page</a>.
-              </p>
-  
-  <br>
 
-  
-  
-            
-  
-  
-  
-              
-  
-  
-            </div>
-          </div>
 
 
 
@@ -366,10 +348,40 @@
               </div>
   
   
+              <h3 class="govuk-heading-s">
+                Full prototype versions</h3>   
+
+                <form class="form" action="/dev1/dev-start" method="post">
+                  <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Prototype - v1</button></form>
+
               
+
+                  <form class="form" action="/dev2/dev-start" method="post">
+                    <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Prototype - v2</button></form>
+  
+              
+                    <form class="form" action="/dev3/dev-start" method="post">
+                      <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Prototype - v3</button></form>
+    
+                    
+                      <form class="form" action="/dev4/dev-start" method="post">
+                        <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Prototype - v4</button></form>
+      
+                    
+                        <form class="form" action="/dev5/dev-start" method="post">
+                          <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Prototype - v5</button></form>
+        
+                      
+
+
   
   <br>
   
+
+  <h3 class="govuk-heading-s">
+    Prototype section versions</h3>   
+
+
   <details class="govuk-details">
     <summary class="govuk-details__summary">
       <span class="govuk-details__summary-text">
@@ -377,8 +389,10 @@
       </span>
     </summary>
     <div class="govuk-details__text">
+
+      <p class="govuk-body"><b>Version A</b></p>
   
-  <h2 class="govuk-heading-s">V1.0 - Old content and link text saying: (open in new tab) </h2>
+  <h2 class="govuk-heading-s">V1.1 - Old content and link text saying: (open in new tab) </h2>
   
   
                   <p class="govuk-body">This prototype version includes the old content before the latest iterations following the 01/02/2024 usability testing. </p>
@@ -394,13 +408,36 @@
               <br>
   
   
-              <h2 class="govuk-heading-s">V1.1 - New content and link text saying: (open in new tab) </h2>
+              <h2 class="govuk-heading-s">V1.2 - New content and link text saying: (open in new tab) </h2>
               
               
                               <p class="govuk-body">This prototype includes the new content following the 01/02/2024 usability testing and the (open in new tab) link wording. </p>
               
                               <form class="form" action="/dev3-5/dev-guidance-paper-v1-1" method="post">
                                 <button class="govuk-button" data-module="govuk-button">Start now</button></form>
+
+
+
+                                <br>
+  
+                                
+                                <p class="govuk-body"><b>Version C</b></p>
+
+
+
+                                <h2 class="govuk-heading-s">V1.3 - Removal of details component at the bottom of the page</h2>
+                                
+                                
+                                                <p class="govuk-body">This prototype includes the removal of the details component following the 01/02/2024 usability testing </p>
+                                
+                                                <form class="form" action="/dev4/dev-guidance-paper3-v-1-1" method="post">
+                                                  <button class="govuk-button" data-module="govuk-button">Start now</button></form>
+
+
+
+
+
+
                             
                               </div>
                           </details>
@@ -417,6 +454,16 @@
 
 
           </div>
+
+
+          <br>
+          <br>
+
+
+          <p class="govuk-body">
+            The design team prototypes can be found on <a href="old-testing.html" class="govuk-link">a seperate page</a>.
+          </p>
+
         </div>
       </div>
 
