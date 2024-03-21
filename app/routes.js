@@ -660,6 +660,8 @@ router.route('/v7b-additional-do-you-have-a-fit-note')
                                                  res.redirect(redirectUrl)
                                                })
 
+                                               
+                                               
                                                router.route('/dev4/dev-two-options')
   .post((req, res, next) => {
     let redirectUrl;
@@ -694,4 +696,125 @@ router.route('/v7b-additional-do-you-have-a-fit-note')
                                                  }
                                                  res.redirect(redirectUrl)
                                                })
+
+
+
+
+                                               router.route('/dev5/dev-two-options')
+                                               .post((req, res, next) => {
+                                                 let redirectUrl;
+                                                 switch (req.body['dev-obtained-fit-note']) {
+                                                   case 'digital':
+                                                     redirectUrl = '/dev5/dev-guidance-digital';
+                                                     break;
+                                                   case 'paper':
+                                                     redirectUrl = '/dev5/dev-guidance-paper';
+                                                     break;
+                                                   default:
+                                                     redirectUrl = req.path;
+                                                     break;
+                                                 }
+                                                 res.redirect(redirectUrl);
+                                               });
+                                             
+                                               router.route('/dev5/dev-have-you-applied-for-esa')
+                                                                                            .post((req, res, next) => {
+                                                                                              let redirectUrl
+                                                                                              // console.table(req.body)
+                                                                                              switch (req.body['dev-have-you-applied-for-esa']) {
+                                                                                                case 'yes':
+                                                                                                  redirectUrl = '/dev5/dev-two-options';
+                                                                                                  break;
+                                                                                                case 'no':
+                                                                                                  redirectUrl = '/dev5/dev-no-esa';
+                                                                                                  break;
+                                                                                                default:
+                                                                                                  redirectUrl = req.path;
+                                                                                                  break;
+                                                                                              }
+                                                                                              res.redirect(redirectUrl)
+                                                                                            })
+
+
+
+
+
+
+
+                                                                                            router.route('/release1/dev-two-options')
+                                               .post((req, res, next) => {
+                                                 let redirectUrl;
+                                                 switch (req.body['dev-obtained-fit-note']) {
+                                                   case 'digital':
+                                                     redirectUrl = '/release1/dev-guidance-digital';
+                                                     break;
+                                                   case 'paper':
+                                                     redirectUrl = '/release1/dev-guidance-paper';
+                                                     break;
+                                                   default:
+                                                     redirectUrl = req.path;
+                                                     break;
+                                                 }
+                                                 res.redirect(redirectUrl);
+                                               });
+                                             
+                                               router.route('/release1/dev-have-you-applied-for-esa')
+                                                                                            .post((req, res, next) => {
+                                                                                              let redirectUrl
+                                                                                              // console.table(req.body)
+                                                                                              switch (req.body['dev-have-you-applied-for-esa']) {
+                                                                                                case 'yes':
+                                                                                                  redirectUrl = '/release1/dev-two-options';
+                                                                                                  break;
+                                                                                                case 'no':
+                                                                                                  redirectUrl = '/release1/dev-no-esa';
+                                                                                                  break;
+                                                                                                default:
+                                                                                                  redirectUrl = req.path;
+                                                                                                  break;
+                                                                                              }
+                                                                                              res.redirect(redirectUrl)
+                                                                                            })
+
+
+
+
+
+    
+
+                                                                                            router.route('/release2/dev-two-options')
+                                               .post((req, res, next) => {
+                                                 let redirectUrl;
+                                                 switch (req.body['dev-obtained-fit-note']) {
+                                                   case 'digital':
+                                                     redirectUrl = '/release2/dev-guidance-digital';
+                                                     break;
+                                                   case 'paper':
+                                                     redirectUrl = '/release2/dev-guidance-paper';
+                                                     break;
+                                                   default:
+                                                     redirectUrl = req.path;
+                                                     break;
+                                                 }
+                                                 res.redirect(redirectUrl);
+                                               });
+                                             
+                                               router.route('/release2/dev-have-you-applied-for-esa')
+                                                                                            .post((req, res, next) => {
+                                                                                              let redirectUrl
+                                                                                              // console.table(req.body)
+                                                                                              switch (req.body['dev-have-you-applied-for-esa']) {
+                                                                                                case 'yes':
+                                                                                                  redirectUrl = '/release2/dev-two-options';
+                                                                                                  break;
+                                                                                                case 'no':
+                                                                                                  redirectUrl = '/release2/dev-no-esa';
+                                                                                                  break;
+                                                                                                default:
+                                                                                                  redirectUrl = req.path;
+                                                                                                  break;
+                                                                                              }
+                                                                                              res.redirect(redirectUrl)
+                                                                                            })
+
 
