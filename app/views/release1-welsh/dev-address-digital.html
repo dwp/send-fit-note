@@ -5,7 +5,7 @@ Your address - Send your fit note - GOV.UK
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="dev-ni-number-digital.html">Back</a>
+  <a class="govuk-back-link" href="dev-ni-number-digital.html">Yn ôl</a>
 {% endblock %}
 
 {% block content %}
@@ -13,32 +13,32 @@ Your address - Send your fit note - GOV.UK
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <form class="form" action="/release1/dev-text-message-digital" method="post">
+      <form class="form" action="/release1-welsh/dev-text-message-digital" method="post">
 
       <fieldset class="govuk-fieldset">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
           <h1 class="govuk-heading-l">
-            What is your address?
+            Eich cyfeiriad
           </h1>
         </legend>
 
         <div class="govuk-form-group">
           <label class="govuk-label" for="address-county">
-            House name or number
+            Enw neu rif tŷ
           </label>
           <input class="govuk-input govuk-!-width-two-thirds" id="address-county" name="address-county" type="text" value="{{ data['address-county'] }}">
         </div>
 
         <div class="govuk-form-group">
           <label class="govuk-label" for="address-postcode">
-            Postcode
+            Cod post
           </label>
           <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text" value="{{ data['address-postcode'] }}">
         </div>
 
       </fieldset>
 
-        <button class="govuk-button" data-module="govuk-button">Continue</button>
+        <button class="govuk-button" data-module="govuk-button">Parhau</button>
 
       </form>
 
@@ -47,11 +47,11 @@ Your address - Send your fit note - GOV.UK
     <div class="govuk-grid-column-one-third">
 
       <div class="govuk-inset-text">
-        <h2 class="govuk-heading-m">Talk to an advisor</h2>
-        <ul class="govuk-list">
-          <li>Telephone: 0800 169 0310</li>
-          <li>Textphone: 0800 169 0314</li>
-          <li>Monday to Friday, 8am to 6pm (except public holidays)</li>
+        <h2 class="govuk-heading-m">Siarad ag ymgynghorydd</h2>
+      <ul class="govuk-list">
+        <li>Ffôn: 0800 328 1744</li>
+        <li>Ffôn testun: 0800 169 0314</li>
+        <li>Dydd Llun i ddydd Gwener, 8am i 5pm (ac eithrio gwyliau cyhoeddus)</li>
         </ul>
       </div>
 
