@@ -1,0 +1,92 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Choose a file to upload - Send your fit note - GOV.UK
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-nav.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+<a class="govuk-back-link" href="javascript:history.back()">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">We cannot accept your fit note</h1>
+
+    <p>Your fit note cannot be read because:</p>
+
+    <div class="panel panel-photo-result panel-photo-error">
+     <h3>There are shadows across it</h3>
+     <p>You’ll need to ask your GP or healthcare practitioner for another copy of your fit note. Ask them to make sure the new copy is well-lit without any shadows.</p>
+    </div>
+
+    <div class="govuk-inset-text">
+      <h3>It's upside down</h3>
+      <p>Follow the instructions on your device to rotate the image and upload it again.</p> 
+    </div>
+
+      <form class="form" action="/dev4/dev-ni-number-digital" method="post">
+        <input type="file" id="selectedFile" style="display: none;" onchange="form.submit()"/>
+        <input type="button" input class="govuk-button" value="Choose another file" onclick="document.getElementById('selectedFile').click();"/>
+
+    <div class="govuk-!-padding-bottom-5"></div>
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          What to do if you cannot upload your fit note
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <p>If your fit note is not accepted, you'll see an error message telling you what to do.</p>
+       <p>If the problem continues, you can print a paper copy of the fit note and post it (you do not need a stamp) to:</p>
+       <ul class="govuk-list">
+         <li>Freepost</li>
+         <li>DWP ESA 26</li></ul>
+         <p>You do not need to post your fit note if you've uploaded it successfully.</p>
+      </div>
+    </details>
+      
+        
+      </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Your fit note
+        </h2>
+        
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <style>
+            .fit-note-zoom {max-width: 100%}
+            .fit-note-zoom {max-height: auto}
+            </style>
+           <img src="/public/images/dev-upload6.JPG" class="fit-note-zoom">  
+
+            <div class="govuk-grid-row">
+              <div class="govuk-inset-text">
+                <h2 class="govuk-heading-m">Talk to an advisor</h2>
+                <ul class="govuk-list">
+                  <li>Telephone: 0800 169 0310</li>
+                  <li>Textphone: 0800 169 0314</li>
+                  <li>Monday to Friday, 8am to 5pm (except public holidays)</li>
+                </ul>
+          
+              </div>
+            </div>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}

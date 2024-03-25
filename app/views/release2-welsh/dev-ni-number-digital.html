@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+National Insurance Number - Send your fit note - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="javascript:history.back()">Yn ôl</a>
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form class="form" action="/release2-welsh/dev-address-digital" method="post">
+
+      <h1 class="govuk-heading-l">Eich rhif Yswiriant Gwladol</h1>
+
+      <div class="govuk-form-group">
+        <div id="national-insurance-number-hint" class="govuk-hint">
+          Mae ar eich cerdyn Yswiriant Gwladol, llythyr budd-dal, slip cyflog neu P60. Er enghraifft, QQ 12 34 56 C.</br>
+        </div>
+        <input class="govuk-input govuk-input--width-10" id="national-insurance-number" name="national-insurance-number" type="text" spellcheck="false" aria-describedby="national-insurance-number-hint" value="{{ data['national-insurance-number'] }}">
+      </div>
+
+        <details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Beth yw fy rhif Yswiriant Gwladol?
+    </span>
+          </summary>
+          <div class="govuk-details__text">
+           <p>Os ydych yn methu dod o hyd i’ch rhif Yswiriant Gwladol, cyfeiriwch at <a class="govuk-link" href="https://www.gov.uk/lost-national-insurance-number" target="_blank">dod o hyd i’ch rhif Yswiriant Gwladol ar GOV.UK (agor mewn tab newydd)</a></p> 
+          </div>
+        </details>
+        <div class="govuk-!-padding-bottom-1"></div>
+        <button class="govuk-button" data-module="govuk-button">Parhau</button>
+
+      </form>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <div class="govuk-inset-text">
+        <h2 class="govuk-heading-m">Siarad ag ymgynghorydd</h2>
+      <ul class="govuk-list">
+        <li>Ffôn: 0800 328 1744</li>
+        <li>Ffôn testun: 0800 169 0314</li>
+        <li>Dydd Llun i ddydd Gwener, 8am i 5pm (ac eithrio gwyliau cyhoeddus)</li>
+        </ul>
+      </div>
+
+  </div>
+
+
+{% endblock %}
