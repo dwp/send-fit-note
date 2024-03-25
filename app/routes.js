@@ -856,3 +856,38 @@ router.route('/v7b-additional-do-you-have-a-fit-note')
                                                                                                                                          })
 
 
+
+                                                                                                                                         router.route('/release2-welsh/dev-two-options')
+                                                                                                                                         .post((req, res, next) => {
+                                                                                                                                           let redirectUrl;
+                                                                                                                                           switch (req.body['dev-obtained-fit-note']) {
+                                                                                                                                             case 'digital':
+                                                                                                                                               redirectUrl = '/release2-welsh/dev-guidance-digital';
+                                                                                                                                               break;
+                                                                                                                                             case 'paper':
+                                                                                                                                               redirectUrl = '/release2-welsh/dev-guidance-paper';
+                                                                                                                                               break;
+                                                                                                                                             default:
+                                                                                                                                               redirectUrl = req.path;
+                                                                                                                                               break;
+                                                                                                                                           }
+                                                                                                                                           res.redirect(redirectUrl);
+                                                                                                                                         });
+                                                                                                                                       
+                                                                                                                                         router.route('/release2-welsh/dev-have-you-applied-for-esa')
+                                                                                                                                                                                      .post((req, res, next) => {
+                                                                                                                                                                                        let redirectUrl
+                                                                                                                                                                                        // console.table(req.body)
+                                                                                                                                                                                        switch (req.body['dev-have-you-applied-for-esa']) {
+                                                                                                                                                                                          case 'yes':
+                                                                                                                                                                                            redirectUrl = '/release2-welsh/dev-two-options';
+                                                                                                                                                                                            break;
+                                                                                                                                                                                          case 'no':
+                                                                                                                                                                                            redirectUrl = '/release2-welsh/dev-no-esa';
+                                                                                                                                                                                            break;
+                                                                                                                                                                                          default:
+                                                                                                                                                                                            redirectUrl = req.path;
+                                                                                                                                                                                            break;
+                                                                                                                                                                                        }
+                                                                                                                                                                                        res.redirect(redirectUrl)
+                                                                                                                                                                                      })
