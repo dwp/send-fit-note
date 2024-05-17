@@ -928,3 +928,44 @@ router.route('/v7b-additional-do-you-have-a-fit-note')
                                                                                                                                                                                         }
                                                                                                                                                                                         res.redirect(redirectUrl)
                                                                                                                                                                                       })
+
+
+                                                                                                                                                                                      router.route('/dev6/dev-two-options')
+                                                                                                                                                                                      .post((req, res, next) => {
+                                                                                                                                                                                        let redirectUrl;
+                                                                                                                                                                                        switch (req.body['dev-obtained-fit-note']) {
+                                                                                                                                                                                          case 'digital':
+                                                                                                                                                                                            redirectUrl = '/dev6/dev-guidance-digital';
+                                                                                                                                                                                            break;
+                                                                                                                                                                                          case 'paper':
+                                                                                                                                                                                            redirectUrl = '/dev6/dev-guidance-paper';
+                                                                                                                                                                                            break;
+                                                                                                                                                                                          default:
+                                                                                                                                                                                            redirectUrl = req.path;
+                                                                                                                                                                                            break;
+                                                                                                                                                                                        }
+                                                                                                                                                                                        res.redirect(redirectUrl);
+                                                                                                                                                                                      });
+                                                                                                                                                                                    
+                                                                                                                                                                                      router.route('/dev6/dev-have-you-applied-for-esa')
+                                                                                                                                                                                                                                   .post((req, res, next) => {
+                                                                                                                                                                                                                                     let redirectUrl
+                                                                                                                                                                                                                                     // console.table(req.body)
+                                                                                                                                                                                                                                     switch (req.body['dev-have-you-applied-for-esa']) {
+                                                                                                                                                                                                                                       case 'yes':
+                                                                                                                                                                                                                                         redirectUrl = '/dev6/dev-two-options';
+                                                                                                                                                                                                                                         break;
+                                                                                                                                                                                                                                       case 'no':
+                                                                                                                                                                                                                                         redirectUrl = '/dev6/dev-no-esa';
+                                                                                                                                                                                                                                         break;
+                                                                                                                                                                                                                                       default:
+                                                                                                                                                                                                                                         redirectUrl = req.path;
+                                                                                                                                                                                                                                         break;
+                                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                                     res.redirect(redirectUrl)
+                                                                                                                                                                                                                                   })
+
+
+
+
+                                                                                                                                                                                      
