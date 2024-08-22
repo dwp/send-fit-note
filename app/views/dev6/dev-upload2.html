@@ -10,7 +10,23 @@ Choose a file to upload - Send your fit note - GOV.UK
     var $element = $('#step-by-step-navigation')
     var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
     stepByStepNavigation.start($element)
+
+
+    if(typeof MOJFrontend.MultiFileUpload !== 'undefined') {
+  new MOJFrontend.MultiFileUpload({
+    container: document.querySelector('.moj-multi-file-upload'),
+    uploadUrl: '/ajax-upload-url',
+    deleteUrl: '/ajax-delete-url'
+  });
+}
+
+
+
+   
+   
   </script>
+
+
 {% endblock %}
 
 {% block beforeContent %}
@@ -23,19 +39,64 @@ Choose a file to upload - Send your fit note - GOV.UK
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">Upload your fit note</h1>
 
-    <div class="govuk-form-group">
-      <div class="govuk-!-padding-bottom-3"></div>
-      <p>Your file must be:</p>
+ 
 
-    <ul class="govuk-list govuk-list--bullet">
-      <li>a JPG, JPEG, HEIC, HEIF, BMP, PNG, TIFF or PDF file</li>
-      <li>no larger than 10MB</li>
-    </ul>
-      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
-    </div>
 
-    <form class="form" action="photo-audit" method="post">
-      <button class="govuk-button" data-module="govuk-button">Upload and continue</button></form>
+
+
+
+
+
+
+    
+
+    
+    <form action="photo-audit" method="post" enctype="multipart/form-data" >
+    
+      <div class="moj-multi-file-upload">
+    
+
+        <div class="moj-multi-file-upload__upload">
+
+          <div class="govuk-form-group">
+         
+
+            <input class="govuk-file-upload moj-multi-file-upload__input" id="documents" name="documents" type="file" multiple="">
+
+
+            
+          </div>
+
+        
+
+
+          <div class="moj-multi-file__uploaded-files ">
+            <div class="govuk-summary-list moj-multi-file-upload__list">
+            
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Upload and continue
+      </button>
+
+    </form>
+<br>
+
+<p>Your file must be:</p>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>a JPG, JPEG, HEIC, HEIF, BMP, PNG, TIF or PDF</li>
+  <li>smaller than 10MB</li>
+</ul>
+
+  
+
+
+
 
     
 
