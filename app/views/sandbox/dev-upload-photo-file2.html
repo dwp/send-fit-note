@@ -1,0 +1,175 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Choose a file to upload - Send your fit note - GOV.UK
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-nav.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
+    stepByStepNavigation.start($element)
+
+
+    if(typeof MOJFrontend.MultiFileUpload !== 'undefined') {
+  new MOJFrontend.MultiFileUpload({
+    container: document.querySelector('.moj-multi-file-upload'),
+    uploadUrl: '/ajax-upload-url',
+    deleteUrl: '/ajax-delete-url'
+  });
+}
+
+
+
+   
+   
+  </script>
+
+
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="dev-guidance-paper.html">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">Upload your fit note</h1>
+
+
+    <p>Your file must be:</p>
+
+    <ol class="govuk-list govuk-list--bullet">
+      <li>a JPG, JPEG, HEIC, HEIF, BMP, PNG, TIF or PDF</li>
+      <li>smaller than 10MB</li>
+      </ol>
+
+
+
+
+<br>
+<br>
+
+<h3 class="govuk-heading-s">Your fit note file</h3>
+<div class="govuk-form-group">
+
+  <dl class="govuk-summary-list hmrc-list-with-actions hmrc-list-with-actions--short">
+    <div class="govuk-summary-list__row">
+      <dt class="govuk-summary-list__key govuk-!-font-weight-regular hmrc-summary-list__key">
+        Fitnote1.PNG
+      </dt>
+      <dd class="govuk-summary-list__actions hmrc-summary-list__actions">
+        <ul class="govuk-summary-list__actions-list">
+          <li class="govuk-summary-list__actions-list-item">       <p class="govuk-body" aria-live="polite">12.09GB</li>
+          <li class="govuk-summary-list__actions-list-item"><a class="govuk-link" href="#"><span aria-hidden="true">Remove</span><span class="govuk-visually-hidden">Remove Sydney Russell from the list</span></a></li>
+        </ul>
+      </dd>
+    </div>
+ 
+  </dl>
+
+</div>
+
+
+
+<h3 class="govuk-heading-s">Your fit note image preview</h3>
+
+
+
+
+    <style>
+      .fit-note-zoom {max-width: 80%}
+      .fit-note-zoom {max-height: auto}
+      </style>
+    <img src="/public/images/dev-upload6.JPG" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">    
+
+
+
+
+    
+
+    
+    <form action="photo-audit" method="post" enctype="multipart/form-data" >
+    
+      <div class="moj-multi-file-upload">
+    
+
+        <div class="moj-multi-file-upload__upload">
+
+          <div class="govuk-form-group">
+         
+
+
+
+            
+          </div>
+
+        
+
+
+      
+
+        </div>
+
+      </div>
+      <button type="submit" class="govuk-button" data-module="govuk-button">
+        Upload and continue
+      </button>
+
+    </form>
+<br>
+
+
+
+  
+
+
+
+
+    
+
+    <div class="govuk-!-padding-bottom-5"></div>
+
+    <details class="govuk-details" data-module="govuk-details">
+      <summary class="govuk-details__summary">
+        <span class="govuk-details__summary-text">
+          What to do if you cannot upload your fit note
+        </span>
+      </summary>
+      <div class="govuk-details__text">
+        <p>If your fit note is not accepted, you'll see an error message telling you what to do.</p>
+       <p>If the problem continues, you can print a paper copy of the fit note and post it (you do not need a stamp) to:</p>
+       <ul class="govuk-list">
+         <li>Freepost</li>
+         <li>DWP ESA 26</li></ul>
+         <p>You do not need to post your fit note if you've uploaded it successfully.</p>
+         <p>You should send your National Insurance number with your fit note. You can find this on your benefit letter, payslip or P60.</p>
+
+      </div>
+    </details>
+      
+        
+      </div>
+
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-third">
+          <div class="govuk-inset-text">
+            <h2 class="govuk-heading-m">Talk to an advisor</h2>
+            <ul class="govuk-list">
+              <li>Telephone: 0800 169 0310</li>
+              <li>Textphone: 0800 169 0314</li>
+              <li>Monday to Friday, 8am to 5pm (except public holidays)</li>
+            </ul>
+      
+          </div>
+        </div>
+      
+      </div>
+      </aside>
+
+    </div>
+  </div>
+{% endblock %}
