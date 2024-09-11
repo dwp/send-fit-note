@@ -12,17 +12,19 @@ Choose a file to upload - Send your fit note - GOV.UK
     stepByStepNavigation.start($element)
 
 
-    if(typeof MOJFrontend.MultiFileUpload !== 'undefined') {
-  new MOJFrontend.MultiFileUpload({
-    container: document.querySelector('.moj-multi-file-upload'),
-    uploadUrl: '/ajax-upload-url',
-    deleteUrl: '/ajax-delete-url'
-  });
-}
+//     if(typeof MOJFrontend.MultiFileUpload !== 'undefined') {
+//   new MOJFrontend.MultiFileUpload({
+//     container: document.querySelector('.moj-multi-file-upload'),
+//     uploadUrl: '/ajax-upload-url',
+//     deleteUrl: '/ajax-delete-url'
+//   });
+// }
 
 
-
-   
+const transfer = new DataTransfer();
+transfer.items.add(new File(['Fitnote.png'], 'Fitnote.png'));
+// transfer.items.add(new File(['file 2 content'], 'file 2.txt'));
+document.querySelector('input').files = transfer.files;
    
   </script>
 
