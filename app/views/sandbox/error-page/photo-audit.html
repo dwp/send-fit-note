@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Choose a file to upload - Send your fit note - GOV.UK
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+        <div class="text-centre" id="formData">
+          
+            <h1 class="govuk-heading-m"><center>Checking your image</center></h1>
+
+            <center><img src="/public/images/loading-squares.gif" class="loading" aria-label="Loading"></center>  
+<p></p>
+            <center><p>This could take up to 5 minutes.</p></center>
+        </div>
+    </div>
+</div>
+
+<script>
+    setTimeout(function(){
+        window.location.href = 'ocr-errors.html';
+    }, 4000);
+</script>
+
+{% endblock %}
+
+
+
