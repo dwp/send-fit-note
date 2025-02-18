@@ -40,10 +40,10 @@ Choose a file to upload - Send your fit note - GOV.UK
 
     <div class="govuk-!-padding-bottom-2"></div>
 
-    <form class="form" action="photo-audit" method="post">
+    <form class="form" action="/sandbox/error-page/photo-audit" method="post">
+      <input type="file" id="selectedFile" style="display: none;" onchange="form.submit()"/>
+      <input type="button" input class="govuk-button" value="Choose a file" onclick="document.getElementById('selectedFile').click();"/>
 
-
-      <button class="govuk-button" data-module="govuk-button">Choose your fit note</button></form>
 
       <div class="govuk-inset-text">
         If you keep having problems uploading your fit note, you should post it to us instead.
