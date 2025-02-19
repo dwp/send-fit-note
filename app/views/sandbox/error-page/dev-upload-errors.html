@@ -19,7 +19,18 @@ Choose a file to upload - Send your fit note - GOV.UK
 
 {% block content %}
 
-
+<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>
+        <a href="#dev-error-10mb-paper">The selected file must be smaller than 10MB</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
 
 <div class="govuk-grid-row">
@@ -40,10 +51,17 @@ Choose a file to upload - Send your fit note - GOV.UK
 
     <div class="govuk-!-padding-bottom-2"></div>
 
-    <form class="form" action="/sandbox/error-page/dev-upload-errors" method="post">
-      <input type="file" id="selectedFile" style="display: none;" onchange="form.submit()"/>
-      <input type="button" input class="govuk-button" value="Choose a file" onclick="document.getElementById('selectedFile').click();"/>
+    <div class="govuk-form-group govuk-form-group--error">
+      
+      <p id="full-name-input-error" class="govuk-error-message">
+        <span class="govuk-visually-hidden">Error:</span> The selected file must be smaller than 10MB
+      </p>
+      <form class="form" action="/sandbox/error-page/photo-audit" method="post">
+        <input type="file" id="selectedFile" style="display: none;" onchange="form.submit()"/>
+        <input type="button" input class="govuk-button" value="Choose a file" onclick="document.getElementById('selectedFile').click();"/>
+      </div>
 
+<br>
 
       <div class="govuk-inset-text">
         If you keep having problems uploading your fit note, you should post it to us instead.
