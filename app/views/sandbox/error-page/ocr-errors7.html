@@ -1,0 +1,258 @@
+{% extends "layout-ab-test.html" %}
+
+{% block pageTitle %}
+Choose a file to upload - Send your fit note - GOV.UK
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-nav.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="dev-two-options">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <!--- 
+<div class="hods-alert hods-alert--error">
+  <h2 class="hods-alert__heading">
+    Upload unsuccessful
+  </h2>
+  <p>
+    Please try again or contact our
+    <a href="#">support team</a>
+    for assistance.
+  </p>
+</div>
+<br>
+
+  --->
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">There is a problem with<br> the image of your fit note</h1>
+
+    
+    <img src="/public/images/dev-upload6.JPG" class="fit-note" height="300" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">
+
+<br>
+<br>
+<br>
+
+
+
+
+
+
+    <p>Your fit note cannot be uploaded because:
+        </p>
+
+
+
+
+
+
+
+
+        <dl class="govuk-summary-list govuk-summary-list--no-border">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" style="width:10%">
+              
+              <img src="/public/images/cross.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" height="35">
+      
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <h3>The image is too light or too dark to read</h3>
+    
+
+        
+    <p>Take another photo, making sure the fit note is well lit.</p>
+
+    
+
+        
+
+
+
+
+            </dd>
+          </div>
+          </dl>
+
+
+
+
+
+
+
+
+        <dl class="govuk-summary-list govuk-summary-list--no-border">
+          <div class="govuk-summary-list__row">
+            <dt class="govuk-summary-list__key" style="width:10%">
+              
+              <img src="/public/images/cross.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" height="35">
+      
+            </dt>
+            <dd class="govuk-summary-list__value">
+              <h3>The image is not clear and readable</h3>
+    
+
+        
+    <p>Take another photo, making sure the fit note is in focus.</p>
+
+    
+
+
+
+            </dd>
+          </div>
+          </dl>
+
+
+
+
+          <dl class="govuk-summary-list govuk-summary-list--no-border">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key" style="width:10%">
+                
+                <img src="/public/images/warning.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" height="45">
+        
+              </dt>
+               
+              <dd class="govuk-summary-list__value">
+                <h3>The data matrix cannot be read</h3>
+      
+      
+                <p>The data matrix is a small square of black and white dots at the bottom of the fit note. If it cannot be read, your fit note could take longer to process. Take another photo, making sure the data matrix is clear and in focus.</p>
+          
+              </dd>
+            </div>
+            </dl>
+  
+  
+              
+          <dl class="govuk-summary-list govuk-summary-list--no-border">
+            <div class="govuk-summary-list__row">
+              <dt class="govuk-summary-list__key" style="width:10%">
+                
+                <img src="/public/images/warning.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" height="45">
+        
+              </dt>
+               
+              <dd class="govuk-summary-list__value">
+                <h3>It might not be a valid fit note</h3>
+      
+      
+                <p>This could be because the unique ID is wrong or missing. We can only accept fit notes with the unique ID: <strong>Med 3</strong>. Check the unique ID on the bottom left of your fit note.</p>
+          
+              </dd>
+            </div>
+            </dl>
+
+
+
+
+   
+
+
+
+
+
+
+
+<br>
+
+<br>
+
+
+<details class="govuk-details">
+  <summary class="govuk-details__summary">
+    <span class="govuk-details__summary-text">
+      Where to find the unique ID
+    </span>
+  </summary>
+  <div class="govuk-details__text">
+    <p>Check the unique ID on the bottom left of your fit note.</p>
+    <img src="/public/images/med3.png" class="fit-note" height="300" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">
+  </div>
+</details>
+
+
+
+
+
+  <div class="govuk-inset-text">
+    If you cannot upload your fit note, <a href="dev-guidance-post" aria-label="Read more about what to do if you cannot send your fit note online" class="govuk-link" rel="noreferrer noopener" target="_blank">you can post it (opens in new tab)</a>.
+  </div>
+
+
+<br>
+
+
+
+
+
+<br>
+
+<br>
+
+
+
+
+
+
+    <form class="form" action="dev-upload" method="post">
+      <button class="govuk-button" data-module="govuk-button">Choose another file</button></form>
+
+  </div>
+
+  
+    <div class="govuk-grid-column-one-third">
+      <div class="govuk-inset-text">
+        <h2 class="govuk-heading-m">Talk to an advisor</h2>
+        <ul class="govuk-list">
+          <li>Telephone: 0800 169 0310</li>
+          <li>Textphone: 0800 169 0314</li>
+          <li>Monday to Friday, 8am to 5pm (except public holidays)</li>
+        </ul>
+  
+      </div>
+    </div>
+  
+  </div>
+
+
+
+  <!--- 
+
+
+    <div class="hmpo-sidebar__inner">
+            
+      <h2>Your fit note</h2>
+      <img src="/public/images/dev-upload6.JPG" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">
+      
+  
+      </div>
+
+  --->
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+    {% endblock %}
