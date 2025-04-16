@@ -1,0 +1,87 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Before you upload your digital fit note - Send your fit note - GOV.UK
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-nav.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="dev-two-options">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">Before you upload your digital fit note</h1>
+
+    <p>It is important that your fit note can be read by our system, or it could be rejected.</p>
+
+      <p></p>
+
+      <p>Before you upload your fit note, make sure:</p>
+
+      <ol class="govuk-list govuk-list--bullet">
+        <li>it is all on 1 page</li>
+          <li>it is not protected by a password
+            <li>the whole fit note is visible, including all four corners</li>
+            <li>everything can be read easily, including your contact details</li>     
+      <li>if it has a data matrix (a black and white square that looks like a QR code), this is clear and not blurred</li></ol>
+      
+
+        <style>
+          .fit-note-zoom {max-width: 100%}
+          .fit-note-zoom {max-height: auto}
+          </style>
+         <img src="/public/images/20240129-crosshairs.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">    
+
+    <div class="govuk-!-padding-bottom-2"></div>
+    <h2 class="govuk-heading-m">What to do if your fit note has a password</h2>
+      <p>If you need to enter a password to see your fit note, our system will not be able to read it and it will be rejected.</p>
+      <p>If possible, you should save your fit note as a new file without a password and upload this new version.</p>
+
+      <div class="hods-alert">
+        
+  <p>You will need to enter your National Insurance number after you have uploaded your fit note. You can find this on your benefit letter, payslip or P60.</p></div>
+
+          
+      
+    
+
+      
+
+
+
+    <form class="form" action="dev-upload" method="post">
+      <button class="govuk-button" data-module="govuk-button">Continue to upload</button></form>
+
+  </div>
+
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-inset-text">
+      <h2 class="govuk-heading-m">Talk to an advisor</h2>
+      <ul class="govuk-list">
+        <li>Telephone: 0800 169 0310</li>
+        <li>Textphone: 0800 169 0314</li>
+        <li>Monday to Friday, 8am to 5pm (except public holidays)</li>
+      </ul>
+
+    </div>
+  </div>
+
+</div>
+
+
+
+
+
+    {% endblock %}

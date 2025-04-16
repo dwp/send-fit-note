@@ -1079,3 +1079,94 @@ router.route('/v7b-additional-do-you-have-a-fit-note')
                                                                                                                                            }
                                                                                                                                            res.redirect(redirectUrl)
                                                                                                                                          })
+
+
+
+                                                                                                                                         router.route('/dev9/dev-two-options')
+                                                                                                                                         .post((req, res, next) => {
+                                                                                                                                           let redirectUrl;
+                                                                                                                                           switch (req.body['dev-obtained-fit-note']) {
+                                                                                                                                             case 'digital':
+                                                                                                                                               redirectUrl = '/dev9/dev-guidance-digital';
+                                                                                                                                               break;
+                                                                                                                                             case 'paper':
+                                                                                                                                               redirectUrl = '/dev9/dev-guidance-paper';
+                                                                                                                                               break;
+                                                                                                                                             default:
+                                                                                                                                               redirectUrl = req.path;
+                                                                                                                                               break;
+                                                                                                                                           }
+                                                                                                                                           res.redirect(redirectUrl);
+                                                                                                                                         });
+                                                                                                                                       
+                                                                                                                                         router.route('/dev9/dev-have-you-applied-for-esa')
+                                                                                                                                                                                      .post((req, res, next) => {
+                                                                                                                                                                                        let redirectUrl
+                                                                                                                                                                                        // console.table(req.body)
+                                                                                                                                                                                        switch (req.body['dev-have-you-applied-for-esa']) {
+                                                                                                                                                                                          case 'yes':
+                                                                                                                                                                                            redirectUrl = '/dev9/dev-two-options';
+                                                                                                                                                                                            break;
+                                                                                                                                                                                          case 'no':
+                                                                                                                                                                                            redirectUrl = '/dev9/dev-no-esa';
+                                                                                                                                                                                            break;
+                                                                                                                                                                                          default:
+                                                                                                                                                                                            redirectUrl = req.path;
+                                                                                                                                                                                            break;
+                                                                                                                                                                                        }
+                                                                                                                                                                                        res.redirect(redirectUrl)
+                                                                                                                                                                                      })
+
+
+                                                                                                                                                                                      router.route('/dev10/dev-two-options')
+                                                                                                                                                                                      .post((req, res, next) => {
+                                                                                                                                                                                        let redirectUrl;
+                                                                                                                                                                                        switch (req.body['dev-obtained-fit-note']) {
+                                                                                                                                                                                          case 'digital':
+                                                                                                                                                                                            redirectUrl = '/dev10/dev-guidance-digital';
+                                                                                                                                                                                            break;
+                                                                                                                                                                                          case 'paper':
+                                                                                                                                                                                            redirectUrl = '/dev10/dev-guidance-paper';
+                                                                                                                                                                                            break;
+                                                                                                                                                                                          default:
+                                                                                                                                                                                            redirectUrl = req.path;
+                                                                                                                                                                                            break;
+                                                                                                                                                                                        }
+                                                                                                                                                                                        res.redirect(redirectUrl);
+                                                                                                                                                                                      });
+                                                                                                                                                                                    
+                                                                                                                                                                                      router.route('/dev10/dev-have-you-applied-for-esa')
+                                                                                                                                                                                                                                   .post((req, res, next) => {
+                                                                                                                                                                                                                                     let redirectUrl
+                                                                                                                                                                                                                                     // console.table(req.body)
+                                                                                                                                                                                                                                     switch (req.body['dev-have-you-applied-for-esa']) {
+                                                                                                                                                                                                                                       case 'yes':
+                                                                                                                                                                                                                                         redirectUrl = '/dev10/dev-wca-question';
+                                                                                                                                                                                                                                         break;
+                                                                                                                                                                                                                                       case 'no':
+                                                                                                                                                                                                                                         redirectUrl = '/dev10/dev-no-esa';
+                                                                                                                                                                                                                                         break;
+                                                                                                                                                                                                                                       default:
+                                                                                                                                                                                                                                         redirectUrl = req.path;
+                                                                                                                                                                                                                                         break;
+                                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                                     res.redirect(redirectUrl)
+                                                                                                                                                                                                                                   })
+
+                                                                                                                                                                                                                                   router.route('/dev10/dev-wca-question')
+                                                                                                                                                                                                                                   .post((req, res, next) => {
+                                                                                                                                                                                                                                     let redirectUrl
+                                                                                                                                                                                                                                     // console.table(req.body)
+                                                                                                                                                                                                                                     switch (req.body['dev-wca-question']) {
+                                                                                                                                                                                                                                       case 'yes':
+                                                                                                                                                                                                                                         redirectUrl = '/dev10/dev-two-options';
+                                                                                                                                                                                                                                         break;
+                                                                                                                                                                                                                                       case 'no':
+                                                                                                                                                                                                                                         redirectUrl = '/dev10/dev-no-wca';
+                                                                                                                                                                                                                                         break;
+                                                                                                                                                                                                                                       default:
+                                                                                                                                                                                                                                         redirectUrl = req.path;
+                                                                                                                                                                                                                                         break;
+                                                                                                                                                                                                                                     }
+                                                                                                                                                                                                                                     res.redirect(redirectUrl)
+                                                                                                                                                                                                                                   })
