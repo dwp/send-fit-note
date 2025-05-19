@@ -5,6 +5,7 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
 
 {% extends "govuk-prototype-kit/layouts/govuk-branded.njk" %}
 
+{% from "govuk/components/service-navigation/macro.njk" import govukServiceNavigation %}
 
 
 
@@ -12,10 +13,29 @@ https://prototype-kit.service.gov.uk/docs/how-to-use-layouts
         {{ 
             govukHeader({
                 homepageUrl: "/",
-                serviceName: serviceName,
                 serviceUrl: "/",
                 containerClasses: "govuk-width-container",
-                useTudorCrown: true
+                useTudorCrown: true,
+                rebrand: true
+
             })
+      
     }}
+
+    {{ govukServiceNavigation({
+        serviceName: "Send your fit note for your ESA claim
+        ",
+        serviceUrl: "/"
+      }) }}
+{% endblock %}
+
+
+{% block footer %}
+  {{ govukFooter({
+    rebrand: true,
+    meta: {
+      items: footerItems,
+      visuallyHiddenTitle: "Footer links"
+    }
+  }) }}
 {% endblock %}
