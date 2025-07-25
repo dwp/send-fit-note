@@ -1,4 +1,4 @@
-{% extends "layout-ab-test.html" %}
+{% extends "layout.html" %}
 
 {% block pageTitle %}
 Choose a file to upload - Send your fit note - GOV.UK
@@ -20,34 +20,31 @@ Choose a file to upload - Send your fit note - GOV.UK
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+  <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">Sending your paper fit note to DWP</h1>
 
-    <div class="govuk-inset-text">
-      <p>If you have a paper fit note, you can use this service to send it to us online. If you cannot send it online, 
-        <a href="dev-guidance-post" aria-label="Read more about what to do if you cannot send your fit note online" class="govuk-link" rel="noreferrer noopener" target="_blank">you can post it (opens in new tab)</a>.
-          </p>
-      </div>
+    <p>If you have a paper fit note, you can either post it to DWP or use this service to send it online.</p>
 
+    <h2 class="govuk-heading-m">Send by post</h2>
 
+    <p>You can post it, without a stamp, to:</p>
+
+  <div class="govuk-inset-text">
+    <ul class="govuk-list">
+      <li>Freepost</li>
+      <li>DWP ESA 26</li></ul>
+  </div>
 
   <h2 class="govuk-heading-m">Send online</h2>
 
-  <p class="govuk-body">There are two ways to send your paper fit note online. You can either:</p>
-  <ul class="govuk-list govuk-list--bullet">
-    <li>take a photo of your fit note</li>
-    <li>scan your fit note</li>
-  </ul>
-  
+  <p>To use this service, you will need to take a photo of your fit note or scan it.</p>
+
   <p>It's important that the photo or scan of your fit note is clear so it can be read by our system. If it cannot be read, it could be rejected.</p>
-
- 
-
   <style>
-    .fit-note-zoom {max-width: 80%}
+    .fit-note-zoom {max-width: 100%}
     .fit-note-zoom {max-height: auto}
     </style>
-   <img src="/public/images/20240129-crosshairs.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">  
+   <img src="/public/images/fit-note-zoom2.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images">  
 
    <p>The example image with the red cross could be rejected because the edges are missing. The example image with the green tick would be accepted because the whole fit note is visible.</p>
   
@@ -76,17 +73,15 @@ Choose a file to upload - Send your fit note - GOV.UK
        <p>You might be able to scan your fit note using a smartphone instead of a scanner. If you have a smartphone, check to see if it can do this.</p>
 
     <div class="govuk-!-padding-bottom-2"></div>
-    <br>
-<br>
 
     <form class="form" action="dev-upload2" method="post">
       <button class="govuk-button" data-module="govuk-button">Continue to upload</button></form>
 
-<br>
-<br>
-<br>
+  </div>
 
-
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-inset-text">
       <h2 class="govuk-heading-m">Talk to an advisor</h2>
       <ul class="govuk-list">
         <li>Telephone: 0800 169 0310</li>
@@ -94,14 +89,10 @@ Choose a file to upload - Send your fit note - GOV.UK
         <li>Monday to Friday, 8am to 5pm (except public holidays)</li>
       </ul>
 
-
-
+    </div>
   </div>
 
 </div>
-</div>
-</div>
-
 
 
 

@@ -1,7 +1,7 @@
 {% extends "layout-ab-test.html" %}
 
 {% block pageTitle %}
-Choose a file to upload - Send your fit note - GOV.UK
+Sending your paper fit note to DWP - Send your fit note - GOV.UK
 {% endblock %}
 
 {% block pageScripts %}
@@ -20,16 +20,12 @@ Choose a file to upload - Send your fit note - GOV.UK
 {% block content %}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+  <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">Sending your paper fit note to DWP</h1>
 
-    <div class="govuk-inset-text">
-      <p>If you have a paper fit note, you can use this service to send it to us online. If you cannot send it online, 
-        <a href="dev-guidance-post" aria-label="Read more about what to do if you cannot send your fit note online" class="govuk-link" rel="noreferrer noopener" target="_blank">you can post it (opens in new tab)</a>.
-          </p>
-      </div>
-
-
+    <p>If you have a paper fit note, you can use this service to send it to us online. If you cannot send it online, 
+      <a href="dev-guidance-post" aria-label="Read more about what to do if you cannot send your fit note online" class="govuk-link" rel="noreferrer noopener" target="_blank">you can post it (opens in new tab)</a>.
+        </p>
 
   <h2 class="govuk-heading-m">Send online</h2>
 
@@ -44,7 +40,7 @@ Choose a file to upload - Send your fit note - GOV.UK
  
 
   <style>
-    .fit-note-zoom {max-width: 80%}
+    .fit-note-zoom {max-width: 100%}
     .fit-note-zoom {max-height: auto}
     </style>
    <img src="/public/images/20240129-crosshairs.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">  
@@ -75,18 +71,52 @@ Choose a file to upload - Send your fit note - GOV.UK
 
        <p>You might be able to scan your fit note using a smartphone instead of a scanner. If you have a smartphone, check to see if it can do this.</p>
 
-    <div class="govuk-!-padding-bottom-2"></div>
-    <br>
 <br>
+       <article class="moj-ticket-panel" aria-label="Sub navigation 1">
 
-    <form class="form" action="dev-upload2" method="post">
+        <section class="moj-ticket-panel__content moj-ticket-panel__content--blue" aria-label="Section 1">
+          <p class="govuk-body">       You will need to enter your National Insurance number after you have uploaded your fit note. You can find this on your benefit letter, payslip or P60.
+          </p>
+        </section>
+      
+      </article>
+      <br>
+
+    <div class="govuk-!-padding-bottom-2"></div>
+
+  
+
+   
+
+    <form class="form" action="dev-upload-photo-final" method="post">
       <button class="govuk-button" data-module="govuk-button">Continue to upload</button></form>
 
-<br>
-<br>
-<br>
 
 
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+      <a href="/dev9/dev-guidance-paper"><button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+        Varient 1
+      </button></a>  
+
+
+
+
+  </div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+    <div class="govuk-inset-text">
       <h2 class="govuk-heading-m">Talk to an advisor</h2>
       <ul class="govuk-list">
         <li>Telephone: 0800 169 0310</li>
@@ -94,12 +124,10 @@ Choose a file to upload - Send your fit note - GOV.UK
         <li>Monday to Friday, 8am to 5pm (except public holidays)</li>
       </ul>
 
-
+    </div>
 
   </div>
 
-</div>
-</div>
 </div>
 
 
