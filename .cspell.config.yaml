@@ -1,27 +1,17 @@
-#      THIS FILE IS MANAGED BY GITLAB-CONFIGURATION
-# DIRECT MODIFICATIONS WILL BE AUTOMATICALLY OVERWRITTEN
-
-$schema: https://raw.githubusercontent.com/streetsidesoftware/cspell/main/cspell.schema.json
-
-version: "0.2"
-
-name: send-your-fit-note-prototype
-
-failFast: true
-noConfigSearch: true
-readonly: true
-useGitignore: true
-
-language: en-GB
-
-languageSettings:
-  - languageId: "*"
-    allowCompoundWords: false
-
-dictionaries:
-  - project-words
-
-dictionaryDefinitions:
-  - name: project-words
-    path: ./.cspell/project-words.txt
-    addWords: true
+stages:
+  - code-quality
+  - heroku-publish
+include:
+  - local: "/gitlab-ci/includes.yml"
+fragment-version-check:
+  extends: .fragment-version-check-template
+gitleaks:
+  extends: .gitleaks-template
+shell-check:
+  extends: .shell-check-template
+todo-check:
+  extends: .todo-check-template
+heroku-site-publish:
+  extends: .heroku-site-publish-template
+  variables:
+    HEROKU_APP_NAME: send-fit-note
