@@ -1,4 +1,4 @@
-  include:
+include:
   #.pre
   - project: 'dwp/engineering/pipeline-solutions/gitlab/fragments/fragment-version-check'
     ref: 2.4.0
