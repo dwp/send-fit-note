@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Do you want a text confirmation - Send your fit note - GOV.UK
+Do you want to provide your mobile phone number - Send your fit note - GOV.UK
 {% endblock %}
 
 {% block beforeContent %}
@@ -19,23 +19,25 @@ Do you want a text confirmation - Send your fit note - GOV.UK
         <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
             <h1 class="govuk-fieldset__heading">
-              Do you want to provide your phone number?
+              Do you want to provide your mobile phone number?
             </h1>
           </legend>
+          <p>We will use it to send you a text message to confirm your fit note has been received</p>
+          <p>We might also use this number to contact you about any issues with your fit note</p>
           
+            
+
+
           <div class="govuk-!-padding-bottom-1"></div>
           <div class="govuk-radios govuk-radios--conditional" data-module="govuk-radios">
             <div class="govuk-radios__item">
               <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="Yes" data-aria-controls="conditional-contact">
               <label class="govuk-label govuk-radios__label" for="contact">
-                Yes
+                Yes, I would like to provide my mobile number
               </label>
               
               <div id="signIn-item-hint" class="govuk-hint govuk-radios__hint">
-                We will send a text message to this number when your fit note has been received.  <br><br>
                 
-                We might also use this number to contact you about any issues with your fit note.
-      
               
             </div>
             <br> <br>
@@ -50,12 +52,10 @@ Do you want a text confirmation - Send your fit note - GOV.UK
             <div class="govuk-radios__item">
               <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="No" data-aria-controls="conditional-contact-2">
               <label class="govuk-label govuk-radios__label" for="contact-2">
-                No
+                No, I do not want to provide my mobile number
               </label>
               <div id="signIn-item-hint" class="govuk-hint govuk-radios__hint">
-                You will not get a text message when your fit note has been received. <br> <br>
                 
-                We will not be able to contact you if there are any issues with your fit note.
                 
             </div>
             <br> <br>

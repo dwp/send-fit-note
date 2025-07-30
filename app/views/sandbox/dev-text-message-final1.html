@@ -1,0 +1,90 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Do you want a text message - Send your fit note - GOV.UK
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="dev-address-digital.html">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+        <form class="form" action="dev-check-your-answers-digital" method="post">
+        <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+            <h1 class="govuk-fieldset__heading">
+              Do you want a text message when we receive your fit note?
+            </h1>
+          </legend>
+        
+          
+        <div class="govuk-radios" data-module="govuk-radios">
+          
+    
+              <div id="contact-hint" class="govuk-hint">
+                You will need to provide your mobile number.
+               </div>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+          
+<input class="govuk-radios__input" id="contact" name="contact" type="radio" value="Yes" data-aria-controls="conditional-contact">
+<label class="govuk-label govuk-radios__label" for="contact">
+Yes</label>
+</div>
+
+<div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+<div class="govuk-form-group">
+<label class="govuk-label" for="contact">
+Enter your mobile number (we might also use this to contact you about any issues with your fit note)
+</label>
+<input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contactByPhone" type="email" spellcheck="false">
+</div>
+</div>
+
+<div class="govuk-radios__item">
+<input class="govuk-radios__input" id="No" name="No" type="radio" value="no" data-aria-controls="No">
+<label class="govuk-label govuk-radios__label" for="no">
+No
+</label>
+</div>
+
+<div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+<div class="govuk-form-group">
+<label class="govuk-label" for="contact-by-phone">
+Phone number
+</label>
+<input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contactByPhone" type="tel" autocomplete="tel">
+</div>
+</div>
+<div class="govuk-radios__item">
+
+
+</div>
+</div>
+</div>
+</fieldset>
+</div>
+
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <div class="govuk-inset-text">
+        <h2 class="govuk-heading-m">Talk to an advisor</h2>
+        <ul class="govuk-list">
+          <li>Telephone: 0800 169 0310</li>
+          <li>Textphone: 0800 169 0314</li>
+          <li>Monday to Friday, 8am to 5pm (except public holidays)</li>
+        </ul>
+      </div>
+
+  </div>
+
+{% endblock %}
