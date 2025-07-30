@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Choose a file to upload - Send your fit note - GOV.UK
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-nav.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="dev-two-options">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-l">Before you upload your digital fit note</h1>
+
+    <h3 class="govuk-heading-s">Check that your fitnote is valid</h3>
+
+    <p>Your fit note should have the unique ID ‘Med 3’. If it’s missing or if it cannot be read by our system, your fit note could be rejected.</p>
+    
+        <p>Check the unique ID on the bottom left of your fit note.</p>
+      <img src="/public/images/med3-new.png" class="fit-note" height="200" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">
+
+    <br>
+    <br>
+      <p>If it contains a data matrix (a black and white square that looks like a QR code), it should be clear. If it cannot be read, your fit note will take longer to process.</p>
+    
+  
+
+          <p>The data matrix is the small square of black and white dots at the bottom of your fit note.</p>        </div>
+          <img src="/public/images/data-matrix.png" class="fit-note" height="200" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">
+    
+
+<br>
+<br>
+<br>
+<br>
+
+      <h3 class="govuk-heading-m">Before you upload it, make sure:</h3>
+
+
+      <ol class="govuk-list govuk-list--bullet">
+        <li>all the text can be read easily</li>
+        <li>it is not protected by a password</li>
+        <li>it is on 1 page with your contact details visible</li>
+        <li>the whole fit note is visible, including all four corners</li></ol>
+
+        <style>
+          .fit-note-zoom {max-width: 70%}
+          .fit-note-zoom {max-height: auto}
+          </style>
+         <img src="/public/images/layout-image2.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">    
+         <span class="govuk-caption-m">The fit note on the left would be rejected by our system because it is too dark and blurry.</span>
+    <div class="govuk-!-padding-bottom-2"></div>
+    <br>
+    <br>
+
+
+
+
+<h3 class="govuk-heading-s">Check that your fitnote is in the correct layout</h3>
+  
+
+  <br><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+  <br>
+
+  <img src="/public/images/fitnote-types2.png" class="fit-note" height="200" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">
+<br>
+
+
+
+<br>
+
+<br>
+<br>
+<div class="govuk-!-padding-bottom-2"></div>
+<h2 class="govuk-heading-m">What to do if your fit note has a password</h2>
+  <p>If you need to enter a password to see your fit note, our system will not be able to read it and it will be rejected.</p>
+  <p>If possible, you should save your fit note as a new file without a password and upload this new version.</p>
+
+  <div class="hods-alert">
+    
+<p>You will need to enter your National Insurance number after you have uploaded your fit note. You can find this on your benefit letter, payslip or P60.</p></div>
+
+      
+
+  <br>
+
+
+
+    <form class="form" action="/release2/dev-upload2" method="post">
+      <button class="govuk-button" data-module="govuk-button">Continue to upload</button></form>
+
+
+
+      <br>
+      <br>
+      <br>
+
+
+      
+      
+            <h2 class="govuk-heading-m">Talk to an advisor</h2>
+            <ul class="govuk-list">
+              <li>Telephone: 0800 169 0310</li>
+              <li>Textphone: 0800 169 0314</li>
+              <li>Monday to Friday, 8am to 5pm (except public holidays)</li>
+            </ul>
+  </div>
+
+</div>
+
+
+
+
+
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

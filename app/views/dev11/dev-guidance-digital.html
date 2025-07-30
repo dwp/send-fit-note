@@ -1,0 +1,194 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Choose a file to upload - Send your fit note - GOV.UK
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-nav.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.AppStepNav()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="dev-two-options">Back</a>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-full">
+    <h1 class="govuk-heading-l">Before you upload your digital fit note</h1>
+
+    <h2 class="govuk-heading-m">Check that your fit note is valid</h2>
+
+
+
+    <ol class="govuk-list govuk-list--number">
+      <li>Your fit note should have the unique ID ‘Med 3’ at the bottom left. If this 
+        is missing or if our system cannot read it, your fit note could be rejected.</li>
+<br>
+        <img src="/public/images/med3-new2.png" class="fit-note" height="200" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">
+
+        <br>
+        <br>
+      <li>The small black and white square (called a data matrix) at the bottom left
+        of your fit note should be clear. If our system cannot read it, your fit note 
+        could take longer to process.</li>
+     
+        <br>
+        <img src="/public/images/data-matrix2.png" class="fit-note" height="200" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">
+  
+      <br>
+    </ol>
+
+
+
+   
+  
+  
+   
+  
+
+    
+
+<br>
+<br>
+<br>
+
+<h2 class="govuk-heading-m">Check that your fit note will be accepted</h2>
+
+
+<p>Your fit note will be rejected if:</p>
+
+
+<ol class="govuk-list govuk-list--bullet">
+  <li>it is double-sided</li>
+  <li>it is protected by a password – you should save your fit note as a new 
+    file before you upload it</li>
+
+  </ol>
+
+
+<br>
+
+
+
+    
+
+
+
+
+      <p>Your fit note should be accepted if:</p>
+
+
+      <ol class="govuk-list govuk-list--bullet">
+        <li>all the information is on 1 page</li>
+        <li>all the words, including your contact details, are clear and easy to 
+          read</li>
+          <li>
+            the image is either landscape or portrait</li>
+        <li>
+          the whole fit note is visible, including all four corners</li>
+   
+        </ol>
+
+
+
+
+        <br>
+
+    
+    
+      <br>
+      <style>
+        .fit-note-zoom {max-width: 70%}
+        .fit-note-zoom {max-height: auto}
+        </style>
+ <img src="/public/images/new-digital.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">    
+
+  <div class="govuk-!-padding-bottom-2"></div>
+  <br>
+
+
+  <br>
+  <br>
+
+
+
+<article class="moj-ticket-panel" aria-label="Sub navigation 1">
+
+  <section class="moj-ticket-panel__content moj-ticket-panel__content--blue" aria-label="Section 1">
+    <p class="govuk-body"> You will need to enter your National Insurance number after you have uploaded your fit note. You can find this on your benefit letter, payslip or P60.
+    </p>
+  </section>
+
+</article>
+
+      
+
+  <br>
+  <br>
+
+
+
+
+
+
+    <form class="form" action="dev-upload" method="post">
+      <button class="govuk-button" data-module="govuk-button">Continue to upload</button></form>
+
+
+
+
+      <br>
+      <br>
+    
+
+
+
+
+
+
+
+
+
+
+      <br>
+      <br>
+     
+
+
+      
+      
+            <h2 class="govuk-heading-m">Talk to an advisor</h2>
+            <ul class="govuk-list">
+              <li>Telephone: 0800 169 0310</li>
+              <li>Textphone: 0800 169 0314</li>
+              <li>Monday to Friday, 8am to 5pm (except public holidays)</li>
+            </ul>
+  </div>
+
+</div>
+
+
+
+
+
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+

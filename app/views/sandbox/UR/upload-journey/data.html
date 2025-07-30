@@ -1,7 +1,7 @@
 {% extends "layout-ab-test.html" %}
 
 {% block pageTitle %}
-There is a problem - Send your fit note - GOV.UK
+There is a problem with the image - Send your fit note - GOV.UK
 {% endblock %}
 
 {% block pageScripts %}
@@ -36,8 +36,8 @@ There is a problem - Send your fit note - GOV.UK
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-l">There is a problem with your fit note</h1>
-<p>This is the fit note you have uploaded</p>
+    <h1 class="govuk-heading-l">There is a problem with the image of your fit note</h1>
+
     
     <img src="/public/images/blurry-fitnote.png" class="fit-note" height="300" alt="">
 
@@ -52,7 +52,7 @@ There is a problem - Send your fit note - GOV.UK
 
           <dl class="govuk-summary-list govuk-summary-list--no-border">
             <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key" style="width:5%">
+              <dt class="govuk-summary-list__key" style="width:10%">
                 
                 <img src="/public/images/warning.png" class="fit-note-zoom" height="45" alt="">
         
@@ -62,16 +62,10 @@ There is a problem - Send your fit note - GOV.UK
                 <h2 class="govuk-heading-m">The data matrix cannot be read</h2>
       
       
-                <p>Your fit note could take longer to process if the data matrix cannot be read.</p>
-                
-                <img src="/public/images/data-matrix2.png" class="fit-note" height="300" alt="">
-
-                
-            
-                <p>The data matrix is the small black and white square at the bottom of your fit note.</p>
+                <p>The data matrix is the small square of black and white dots at the bottom of your fit note. If it cannot be read, your fit note could take longer to process.</p>
               
-                <p>If you took a photo of a paper fit note, you can take another photo and upload the new image. Make sure the data matrix is in focus.</p>
-                  <p>Or, if you want to use the fit note you have just uploaded, choose Continue.</p>
+                <p>If you took a photo of a paper fit note, take another photo, making sure the data matrix is in focus.</p>
+                  <p>Or if you want to use this image, select the 'continue' button.</p>
           
               </dd>
             </div>
@@ -97,13 +91,17 @@ There is a problem - Send your fit note - GOV.UK
 
 
 
-<button type="submit" class="govuk-button" data-module="govuk-button">
-  Choose another file
-</button>
-<br>
-<button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
-  Continue
-</button>
+<div class="govuk-button-group">
+  <form class="form" action="" method="post">
+  <button type="submit" class="govuk-button" data-module="govuk-button">
+    Choose another file
+  </button></form>
+  <form class="form" action="ni-number" method="post">
+  <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
+    Continue
+  </button></form>
+</div>
+
 
 </div>
 

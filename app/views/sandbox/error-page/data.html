@@ -37,26 +37,17 @@ Choose a file to upload - Send your fit note - GOV.UK
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
     <h1 class="govuk-heading-l">There is a problem<br> with the image of your fit note</h1>
+    <p>This is the fit note you have uploaded</p>
 
-    
     <img src="/public/images/dev-upload6.JPG" class="fit-note" height="300" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">
 
 <br>
 <br>
-<br>
-
-
-
-
 
 
           <dl class="govuk-summary-list govuk-summary-list--no-border">
             <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key" style="width:10%">
-                
-                <img src="/public/images/warning.png" class="fit-note-zoom" aria-label="Examples of correct and incorrect fit note images" height="45">
-        
-              </dt>
+            
                
 
 
@@ -65,11 +56,22 @@ Choose a file to upload - Send your fit note - GOV.UK
               <dd class="govuk-summary-list__value">
                 <h2>The data matrix cannot be read</h2>
       
-      
-                <p>The data matrix is the small square of black and white dots at the bottom of your fit note. If it cannot be read, your fit note could take longer to process.</p>
-              
-                <p>If you took a photo of a paper fit note, take another photo, making sure the data matrix is in focus.</p>
-                  <p>Or if you want to use this image, select the 'continue' button.</p>
+                <p>Your fit note could take longer to process if the data matrix can't be read.</p>
+               
+
+                
+                <p>The data matrix is the small square of black and white dots at the bottom of your fit note.</p> 
+              <br>
+                <img src="/public/images/data-matrix2.png" class="fit-note" height="180" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">
+                <br>
+                <br>
+
+
+                <p>If you took a photo of a paper fit note, you can take another photo and upload the new image. Making sure that the data matrix is in focus.</p>
+            
+
+            
+                <p>Or if you want to use the fit note you have just uploaded, choose Continue.</p>
           
               </dd>
             </div>
@@ -91,18 +93,21 @@ Choose a file to upload - Send your fit note - GOV.UK
 
 <br>
 
+
+
+<form class="form" action="data-error" method="post">
+  <input type="file" id="selectedFile" style="display: none;" onchange="form.submit()"/>
+  <input type="button" input class="govuk-button govuk-button--secondary" value="Upload a new image" onclick="document.getElementById('selectedFile').click();"/>
+
 <br>
 
 
-
-<div class="govuk-button-group">
   <button type="submit" class="govuk-button" data-module="govuk-button">
-    Choose another file
-  </button>
-  <button type="submit" class="govuk-button govuk-button--secondary" data-module="govuk-button">
     Continue
   </button>
-</div>
+<br>
+
+
 
 
 </div>

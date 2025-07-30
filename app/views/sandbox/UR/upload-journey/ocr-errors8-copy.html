@@ -1,7 +1,7 @@
 {% extends "layout-ab-test.html" %}
 
 {% block pageTitle %}
-There is a problem - Send your fit note - GOV.UK
+There is a problem with the image - Send your fit note - GOV.UK
 {% endblock %}
 
 {% block pageScripts %}
@@ -36,9 +36,9 @@ There is a problem - Send your fit note - GOV.UK
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-    <h1 class="govuk-heading-l">There is a problem with your fit note</h1>
+    <h1 class="govuk-heading-l">There is a problem with<br> the image of your fit note</h1>
 
-    <p>This is the fit note you have uploaded.</p>
+    
     <img src="/public/images/blurry2.png" class="fit-note" height="300" alt="">
 
 <br>
@@ -61,7 +61,7 @@ There is a problem - Send your fit note - GOV.UK
 
         <dl class="govuk-summary-list govuk-summary-list--no-border">
           <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key" style="width:5%">
+            <dt class="govuk-summary-list__key" style="width:10%">
               
               <img src="/public/images/cross.png" class="fit-note-zoom"  height="35" alt="">
       
@@ -93,7 +93,7 @@ There is a problem - Send your fit note - GOV.UK
 
         <dl class="govuk-summary-list govuk-summary-list--no-border">
           <div class="govuk-summary-list__row">
-            <dt class="govuk-summary-list__key" style="width:5%">
+            <dt class="govuk-summary-list__key" style="width:10%">
               
               <img src="/public/images/cross.png" class="fit-note-zoom" height="35" alt="">
       
@@ -102,9 +102,9 @@ There is a problem - Send your fit note - GOV.UK
               <h3>Some corners of the image cannot be seen</h3>
     
 
-              <p>The [...] and [...] corners of your fit note image cannot be seen.</p>
+              <p>The top right and bottom right corners of your fit note image cannot be seen.</p>
           <p>This could be because the image is too dark or the photo was taken at an angle.</p>
-            <p>If you have a paper fit note, take another photo, making sure the whole fit note is well lit and all four corner are visible.
+            <p>If you have a paper fit note, take another photo, making sure the whole fit note is well lit and visible.
             </p>
 
     
@@ -122,7 +122,7 @@ There is a problem - Send your fit note - GOV.UK
 
           <dl class="govuk-summary-list govuk-summary-list--no-border">
             <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key" style="width:5%">
+              <dt class="govuk-summary-list__key" style="width:10%">
                 
                 <img src="/public/images/warning.png" class="fit-note-zoom" height="45" alt="">
         
@@ -132,50 +132,39 @@ There is a problem - Send your fit note - GOV.UK
                 <h3>The data matrix cannot be read</h3>
       
       
-                <p>Your fit note could take longer to process if the data matrix is missing or if our system cannot read it.</p>
+                <p>The data matrix is the small square of black and white dots at the bottom of your fit note. If it is missing or if it cannot be read by our system, your fit note will have to be processed manually.</p>
                 
                   <p>If you have a paper fit note, take another photo, making sure the data matrix is clear and in focus.
                   </p>
-                                   
+                  
           
               </dd>
             </div>
             </dl>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-      
   
   
               
           <dl class="govuk-summary-list govuk-summary-list--no-border">
             <div class="govuk-summary-list__row">
-              <dt class="govuk-summary-list__key" style="width:5%">
+              <dt class="govuk-summary-list__key" style="width:10%">
                 
                 <img src="/public/images/warning.png" class="fit-note-zoom" height="45" alt="">
         
               </dt>
                
               <dd class="govuk-summary-list__value">
-                <h3>The ID code 'Med 3' cannot be read</h3>
+                <h3>The unique ID cannot be read</h3>
       
       
-                <p>Your fit note could be rejected if the unique ID 'Med 3' is missing or if it cannot be read by our system.</p>
-                                   <p>If you have a paper fit note, take another photo, making sure 'Med 3' is visible.</p>
-                                   
+                <p>Your fit note should have the unique ID ‘Med 3’. If it’s missing or if it cannot be read by our system, your fit note could be rejected.</p>
+                  <p>Check the unique ID on the bottom left of your fit note.</p>
+                  <p>If you have a paper fit note, take another photo making sure the whole fit note is visible.</p><br>
                 <img src="/public/images/med3-new.png" class="fit-note" height="300" alt="">
 
               </dd>
             </div>
             </dl>
-            <form class="form" action="dev-upload2" method="post">
-              <button class="govuk-button" data-module="govuk-button">Upload a new image</button></form>
+
 
 
 
@@ -208,7 +197,9 @@ There is a problem - Send your fit note - GOV.UK
 
 
 
-    
+    <form class="form" action="dev-upload2" method="post">
+      <button class="govuk-button" data-module="govuk-button">Go back</button></form>
+
 
 
 
