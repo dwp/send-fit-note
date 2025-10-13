@@ -2,7 +2,16 @@
 // For guidance on how to create routes see:
 // https://prototype-kit.service.gov.uk/docs/create-routes
 //
+router.post('/country-answer', function (req, res) {
+  const country = req.session.data['country'];
 
+  if (country === 'England') {
+    // Safe. Hard-coded internal path and guarded by redirectInternal.
+    return res.redirectInternal('/age');
+  } else {
+    return res.redirectInternal('/ineligible-country');
+  }
+});
 const govukPrototypeKit = require('govuk-prototype-kit')
 const router = govukPrototypeKit.requests.setupRouter()
 
