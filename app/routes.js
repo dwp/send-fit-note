@@ -2,8 +2,14 @@
 // For guidance on how to create routes see:
 // https://prototype-kit.service.gov.uk/docs/create-routes
 //
+
+const govukPrototypeKit = require('govuk-prototype-kit')
+const router = govukPrototypeKit.requests.setupRouter()
+
+// Add your routes here
+
 router.post('/country-answer', function (req, res) {
-  const country = req.session.data['country'];
+const country = req.session.data['country'];
 
   if (country === 'England') {
     // Safe. Hard-coded internal path and guarded by redirectInternal.
@@ -12,10 +18,9 @@ router.post('/country-answer', function (req, res) {
     return res.redirectInternal('/ineligible-country');
   }
 });
-const govukPrototypeKit = require('govuk-prototype-kit')
-const router = govukPrototypeKit.requests.setupRouter()
 
-// Add your routes here
+
+
 
 router.route('/v7a-three-options-select')
   .post((req, res, next) => {
