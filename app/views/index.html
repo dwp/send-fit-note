@@ -1,8 +1,6 @@
-
 {% extends "layout.html" %}
 
 {% set govukRebrand = true %}
-
 
 
 
@@ -16,15 +14,30 @@
 
     <div class="govuk-grid-column-two-thirds">
       <h1 class="govuk-heading-xl">
-        Fit Note Prototype Versions</h1>
-
-        <p> For any questions, please contact: <a href="mailto:rebecca.williams5@@engineering.digital.dwp.gov.uk">Rebecca Williams</a>.
+        Send Your Fit Note service prototypes</h1>
 
           <p class='govuk-body'> You can access the <a href="https://www.gov.uk/send-fit-note" class="govuk-link" rel="noreferrer noopener" target="_blank">live service of SYFN here (opens in new tab)</a>.</p>
 
-
      
       </p>
+<br>
+            <h3 class="govuk-heading-m">
+                                    Current live service prototype</h3>
+
+                  
+                    
+                                    <p class='govuk-body'>This prototype version was created in January 2026.</p>
+                 <br>
+                    
+                                    <form class="form" action="/release3/dev-start" method="post">
+                                      <button class="govuk-button" data-module="govuk-button">Release 3 - English</button></form>
+                      
+                                      <form class="form" action="" method="post">
+                                        <button class="govuk-button" data-module="govuk-button">Release 3 - Welsh</button></form>
+
+
+    
+
       <br>
       <br>
       
@@ -35,53 +48,14 @@
           <div class="govuk-accordion__section-header">
             <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-          Prototype for Developers
+          Previous prototype releases
         </span>
             </h2>
           </div>
           <div id="accordion-default-content-1" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-1">
 
-
-          
-
-
-            <h3 class="govuk-heading-m">
-              Sprint prototype</h3>
-
-
-
-            <div class="govuk-inset-text">
-                <p>Tickets included for design changes in sprint 29: <a href="https://dwpdigital.atlassian.net/browse/HTF-1085">HTF-1085 - 3 to 2 radio buttons </a>
-                  <p><a href="https://dwpdigital.atlassian.net/browse/HTF-1086">HTF-1086 - Split upload and guidance pages (paper) </a></p><a href="https://dwpdigital.atlassian.net/browse/HTF-1087">HTF-1087 - Split upload and guidance pages (digital) </a></p>
-            </div>
-
-            <form class="form" action="/dev3/dev-start" method="post">
-              <button class="govuk-button" data-module="govuk-button">Sprint Prototype</button></form>
-<br>
-<br>
-              <h3 class="govuk-heading-m">
-                Release 1 prototype</h3>
-
-              
-                <p class='govuk-body'>This prototype version was created in 2023 and contains both an English and Welsh version.</p>
-
-
-              <form class="form" action="/release1/dev-start" method="post">
-                <button class="govuk-button" data-module="govuk-button">Release 1 - English</button></form>
-
-                <form class="form" action="/release1-welsh/dev-start" method="post">
-                  <button class="govuk-button" data-module="govuk-button">Release 1 - Welsh</button></form>
-
-
-                  <br>
-<br>
               <h3 class="govuk-heading-m">
                 Release 2 prototype</h3>
-                <strong class="govuk-tag">
-                  Current live service design
-                </strong>
-<br>
-<br>
 
                 <p class='govuk-body'>This prototype version was created in March 2024 and contains both an English and Welsh version.</p>
 
@@ -101,27 +75,20 @@
 
 
 
-
                     <br>
                     <br>
-                                  <h3 class="govuk-heading-m">
-                                    Release 3 prototype</h3>
-                    
-                                    <p class='govuk-body'>This prototype version was created in May 2024 and contains both an English and Welsh version.</p>
+                     
+          <h3 class="govuk-heading-m">
+                Release 1 prototype</h3>
 
-                                    <p class="govuk-body">The release 3 prototype includes the following changes:</p>
-                    <ul class="govuk-list govuk-list--bullet">
-                      <li><b>Fitnote upload page </b>- choose file and upload button reordered </li>
-                      </ul>
-                      <br>
-                      <br>
-                    
-                                    <form class="form" action="/release3/dev-start" method="post">
-                                      <button class="govuk-button" data-module="govuk-button">Release 3 - English</button></form>
-                      
-                                      <form class="form" action="" method="post">
-                                        <button class="govuk-button" data-module="govuk-button">Release 3 - Welsh</button></form>
+              
+                <p class='govuk-body'>This prototype version was created in 2023 and contains both an English and Welsh version.</p>
 
+              <form class="form" action="/release1/dev-start" method="post">
+                <button class="govuk-button" data-module="govuk-button">Release 1 - English</button></form>
+
+                <form class="form" action="/release1-welsh/dev-start" method="post">
+                  <button class="govuk-button" data-module="govuk-button">Release 1 - Welsh</button></form>
 
           </div>
         </div>
@@ -130,14 +97,13 @@
               <div class="govuk-accordion__section-header">
                   <h2 class="govuk-accordion__section-heading">
         <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
-          Error Messages for Developers
+          Previous error message work
         </span>
                   </h2>
               </div>
             
 
               <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-
 
               <details class="govuk-details">
                 <summary class="govuk-details__summary">
@@ -335,7 +301,6 @@
                       <button class="govuk-button govuk-button--secondary" data-module="govuk-button"><b>10b. Mobile Number Error</b></button></form>
               </details>
 
-
               <h2 class="govuk-heading-s">
                 11. Upload errors</h2>
             <details class="govuk-details" data-module="govuk-details">
@@ -352,7 +317,6 @@
                     </p>
                 
             </details>
-
 
               <div class="govuk-inset-text">
                   <!DOCTYPE html>
@@ -373,9 +337,7 @@
 
 
 
-
               </details>
-
 
 
 
@@ -404,10 +366,8 @@
 </p>
 
 
-
 <br>
 <br>
-
 
 <h3 class="govuk-heading-s">2.The file you selected is too large to be processed. </h3>
 
@@ -426,7 +386,6 @@
 <br>
 <br>
 
-
 <h3 class="govuk-heading-s">3.You have tried to upload your fit note too many times.</h3>
 
 <p>You have tried to upload your fit note too many times. Wait 5 minutes and upload it again or you can post it to: Freepost, DWP ESA 26. You do not need a stamp.</p>
@@ -442,9 +401,7 @@
 </p>
 
 
-
 </details>
-
 
 
 
@@ -462,24 +419,16 @@
 
 
 
-
           <div class="govuk-accordion__section ">
             <div class="govuk-accordion__section-header">
               <h2 class="govuk-accordion__section-heading">
           <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
-            Prototype version history
+            Prototypes for design (update title)
           </span>
               </h2>
             </div>
             <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
-  
-              <div class="govuk-warning-text">
-                <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-                <strong class="govuk-warning-text__text">
-                  <span class="govuk-warning-text__assistive">Warning</span>
-                  These are old prototypes that are not for production and the latest prototype may be subject to change. 
-                </strong>
-              </div>
+
   
   
               <h3 class="govuk-heading-s">
@@ -532,7 +481,6 @@
   <h3 class="govuk-heading-s">
     Prototype section versions</h3>   
 
-
   <details class="govuk-details">
     <summary class="govuk-details__summary">
       <span class="govuk-details__summary-text">
@@ -568,12 +516,10 @@
                                 <button class="govuk-button" data-module="govuk-button">Start now</button></form>
 
 
-
                                 <br>
   
                                 
                                 <p class="govuk-body"><b>Version C</b></p>
-
 
 
                                 <h2 class="govuk-heading-s">V1.3 - Removal of details component at the bottom of the page</h2>
@@ -583,7 +529,6 @@
                                 
                                                 <form class="form" action="/dev4/dev-guidance-paper3-v-1-1" method="post">
                                                   <button class="govuk-button" data-module="govuk-button">Start now</button></form>
-
 
 
 
@@ -604,13 +549,19 @@
               <div class="govuk-accordion__section-header">
                 <h2 class="govuk-accordion__section-heading">
             <span class="govuk-accordion__section-button" id="accordion-default-heading-2">
-              Usability testing prototypes
+              User testing prototypes
             </span>
                 </h2>
               </div>
               <div id="accordion-default-content-2" class="govuk-accordion__section-content" aria-labelledby="accordion-default-heading-2">
     
-            
+                    <details class="govuk-details">
+                  <summary class="govuk-details__summary">
+                    <span class="govuk-details__summary-text">
+                      Usability testing prototypes March 2025
+                    </span>
+                  </summary>
+                  <div class="govuk-details__text">
     
     
                 <h3 class="govuk-heading-s">
@@ -636,9 +587,15 @@
             <button class="govuk-button govuk-button--secondary" data-module="govuk-button">Testing prototype 1 - Original</button></form>
 
          
-                  <br>
-                  <br>
+
+                  </div>
+                </details>
+          
+  
+  
     
+                         
+
           
           
           
@@ -650,7 +607,6 @@
                     </span>
                   </summary>
                   <div class="govuk-details__text">
-
 
                     <h3 class="govuk-heading-s">
                       New feature usability testing prototypes</h3>
@@ -714,7 +670,6 @@
 
 
 
-
                   </div>
                 </details>
           
@@ -728,13 +683,10 @@
 
             
 
-
           </div>
 
-
           <br>
           <br>
-
 
           <p class="govuk-body">
             The design team prototypes can be found on <a href="old-testing.html" class="govuk-link">a seperate page</a>.
@@ -742,7 +694,6 @@
 
         </div>
       </div>
-
 
 
     
@@ -755,3 +706,5 @@
 </div>
 
 {% endblock %}
+
+
