@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-Choose a file to upload - Send your fit note - GOV.UK
+Before you upload your digital fit note - Send your fit note - GOV.UK
 {% endblock %}
 
 {% block pageScripts %}
@@ -28,20 +28,21 @@ Choose a file to upload - Send your fit note - GOV.UK
 
 
     <ol class="govuk-list govuk-list--number">
-      <li>Your fit note should have the unique ID ‘Med 3’ at the bottom left. If this 
-        is missing or if our system cannot read it, your fit note could be rejected.</li>
-<br>
-        <img src="/public/images/med3-new2.png" class="fit-note" height="200" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">
-
+      <li>Your fit note should be a Med 3 fit note issued by a health practitioner, such as a GP. It should look like this example:<br>
+      
+    
+      </li><br>
+      
+      <img src="/public/images/fit-note.png" class="fit-note" height="200" aria-label="">
+       
         <br>
-        <br>
-      <li>The small black and white square (called a data matrix) at the bottom left
-        of your fit note should be clear. If our system cannot read it, your fit note 
-        could take longer to process.</li>
+      <br>
+      
+      <li>The small black and white square (called a data matrix) at the bottom
+        of your fit note should be clear. </li>
      
         <br>
-        <img src="/public/images/data-matrix2.png" class="fit-note" height="200" aria-label="Examples of correct and incorrect fit note images" alt="Image showing two fitnotes, one is blurry with a cross next to it, and the other one is focus with a tick next to it">
-  
+        <img src="/public/images/data-matrix2.png" class="fit-note" height="200" aria-label=""
       <br>
     </ol>
 
@@ -69,6 +70,7 @@ Choose a file to upload - Send your fit note - GOV.UK
   <li>it is double-sided</li>
   <li>it is protected by a password – you should save your fit note as a new 
     file before you upload it</li>
+  
 
   </ol>
 
@@ -113,6 +115,7 @@ Choose a file to upload - Send your fit note - GOV.UK
   <div class="govuk-!-padding-bottom-2"></div>
   <br>
 
+  <p>The example image with the red cross could be rejected because the edges are missing. The example image with the green tick would be accepted because the whole fit note is visible.</p>
 
   <br>
   <br>
@@ -140,6 +143,7 @@ Choose a file to upload - Send your fit note - GOV.UK
 
     <form class="form" action="dev-upload" method="post">
       <button class="govuk-button" data-module="govuk-button">Continue to upload</button></form>
+
 
 
 
@@ -179,6 +183,13 @@ Choose a file to upload - Send your fit note - GOV.UK
 
 
     {% endblock %}
+
+
+
+
+
+
+
 
 
 
