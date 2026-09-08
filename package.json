@@ -9,13 +9,13 @@
     "@govuk-prototype-kit/common-templates": "2.0.1",
     "@govuk-prototype-kit/step-by-step": "2.2.4",
     "@ministryofjustice/frontend": "6.0.0",
-    "axios": "1.15.2",
+    "axios": "1.20.0",
     "govuk-frontend": "5.14.0",
-    "govuk-prototype-kit": "13.20.1",
+    "govuk-prototype-kit": "13.20.4",
     "hmrc-frontend": "6.117.0",
     "home-office-kit": "1.2.0",
     "jquery": "3.7.1",
-    "notifications-node-client": "8.4.0",
+    "notifications-node-client": "8.5.0",
     "nunjucks": "3.2.4"
   },
   "overrides": {
